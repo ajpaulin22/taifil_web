@@ -16,6 +16,29 @@
     @push('styles')
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @endpush
+    <style type="text/css">
+
+        .goog-logo-link,.goog-te-gadget span{
+            display:none !important;
+        }
+        .goog-te-gadget{
+            color:transparent!important;
+            font-size :0;
+        }
+        .goog-te-banner-frame{
+            display:none !important;
+        }
+        #goog-gt-tt, .goog-te-balloon-frame
+        {
+            display: none !important;
+        }
+        .goog-text-highlight 
+        { 
+            background: none !important;
+            box-shadow: none !important;
+        }
+    
+      </style>
     @stack('styles')
     
 </head>

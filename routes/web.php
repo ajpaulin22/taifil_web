@@ -19,6 +19,17 @@ Route::get('/home', function () {
     return view('onePage');
 });
 
+Route::get('/qualifications',function(){
+    return view('pages.qualification');
+});
+
+
+Route::group(['prefix' => 'category'],function(){
+    Route::get('/',function(){
+        return view('pages.jobcategory');
+    })->name('category');
+});
+
 Route::get('/home', [App\Http\Controllers\OnepageController::class, 'index'])->name('home');
 
 Route::group(['prefix' => 'inquiry'],function(){
@@ -28,6 +39,7 @@ Route::group(['prefix' => 'inquiry'],function(){
 Route::group(['prefix' => 'biodata'],function(){
     Route::get('/',[App\Http\Controllers\BiodateController::class,'index'])->name('biodata');
 });
+
 
 Route::group(['prefix' => 'admin'],function(){
     Route::get('/',[App\Http\Controllers\Admin\AdminController::class,'index'])->name('admin');

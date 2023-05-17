@@ -44,7 +44,33 @@
 				<div class="tab-content">
 					<div class="tab-pane fade show active" id="PersonalData">
 						<div class="m-4">
-							<div class="row mt-2 mb-5">
+							<div class="row mt-2 mb-3">
+								@if($biodata == 'SSW')
+								<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+									<div class="row">
+										<div class="input-group input-group-sm mb-2">
+											<div class="input-group-prepend">
+												<span class="input-group-text">Prometric</span>
+											</div>
+											<select name="search_type" id="search_type" class="form-control clear-select clear">
+												<option value=""></option>
+											</select>
+											<div id="max_count_feedback"></div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-group input-group-sm mb-2">
+											<div class="input-group-prepend">
+												<span class="input-group-text">Japanese <br> Language Cert.</span>
+											</div>
+											<select name="search_type" id="search_type" class="form-control clear-select clear">
+												<option value=""></option>
+											</select>
+											<div id="max_count_feedback"></div>
+										</div>
+									</div>
+								</div>
+								@endif
 								<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
 									<div class="input-group input-group-sm mb-2">
 										<div class="input-group-prepend">
@@ -538,6 +564,7 @@
 							<div class="row mt-2">
 								<div class="col-xl-1 col-lg-1 col-md-1 col-sm-1">
 									<label for="">Vocational:</label>
+									
 								</div>
 								<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
 									<input type="text" class="form-control form-control-sm" id="PDLast_Name" name="PDLast_Name" placeholder="Name of School" autocomplete="off">
@@ -551,6 +578,7 @@
 								<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
 									<input type="date" class="form-control form-control-sm" id="PDLast_Name" name="PDLast_Name" placeholder="Date Until" autocomplete="off">
 								</div>
+								<button class="btn btn-primary" id="AddEmployment_Local">Add Record</button>
 							</div>
 							<div class="row mt-2">
 								<div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 offset-1">
@@ -1180,7 +1208,7 @@
 					</div>
 					<div class="tab-pane fade" id="Upload">
 						<div class="m-4">
-
+							<input id='file-input' type='file' multiple/>
 						</div>
 					</div>
 					<button class="btn btn-secondary offset-11" id="addAcquantances" style="margin-top: 1rem;">SAVE</button>	

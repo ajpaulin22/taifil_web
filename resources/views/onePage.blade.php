@@ -8,6 +8,7 @@
     @include('_partials.ttip_partial')
     @include('_partials.ssw_partial')
     @include('_partials.gallery_partial')
+    @include('pages.inquiry')
 @endsection
 
 @push('script')

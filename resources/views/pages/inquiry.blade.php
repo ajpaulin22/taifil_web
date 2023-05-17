@@ -2,62 +2,62 @@
     @push('style')
         <link rel="stylesheet" href="{{asset('/css/inquiry.css')}}">
     @endpush
-    @extends('layout.layout')
+    {{-- @extends('layout.layout')
     
-    @section('content')
+    @section('content') --}}
          <!-- ================> Page Header section start here <================== -->
-	</div>
-    <div class="container">
-        <div class="pageheader__content text-center">
-                <div class="container">
-                    <div class="pageheader__content text-center p-4">
-                        <img src="{{url('/images/bg-img/1.jpg')}}" alt="" >
-                        
-                        <div class="bg-white rounded text-start p-4 mt-4" style="background-color: white; ">
-                            <div class="row">
-                                <div class="col-8">
-                                    <p>Drop us a line or just say Hello!</p>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group has-error has-danger">
-                                        <label for="fullname">Full Name <span class="text-danger">*</span></label>
-                                        <input type="text" value="" class="form-control inputs" name="fullname" id="fullname" placeholder="Fullname" required="" data-error="This field is required.">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group has-error has-danger">
-                                        <label for="fullname">Email <span class="text-danger">*</span></label>
-                                        <input type="email" value="" class="form-control inputs" name="fullname" id="fullname" placeholder="Fullname" required="" data-error="This field is required.">
-                                    </div>
-                                </div>
+	{{-- </div> --}}
+
+    <div class="about padding-top padding-bottom" id="inquiry_section" style="background-image: linear-gradient(to right top, #009572, #1d9972, #2d9d72, #3aa171, #45a571, #46a671, #48a770, #49a870, #40a670, #37a470, #2ba270, #1ca070);height: 100vh;">
+        <div class="container">
+            <div class="section__header style-2 text-center wow fadeInUp" data-wow-duration="1.5s" >
+                <h2 class="text-white"><hr>INQUIRY<hr></h2>
+                <div class="bg-white rounded text-start p-4 mt-4" style="background-color: white; ">
+                    <div class="row">
+                        <div class="col-8">
+                            <p>Drop us a line or just say Hello!</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group has-error has-danger">
+                                <label for="fullname">Full Name <span class="text-danger">*</span></label>
+                                <input type="text" value="" class="form-control inputs" name="fullname" id="fullname" placeholder="Fullname" required="" data-error="This field is required.">
                             </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group has-error has-danger">
-                                        <label for="fullname">Subject <span class="text-danger">*</span></label>
-                                        <input type="text" value="" class="form-control inputs" name="fullname" id="fullname" placeholder="Fullname" required="" data-error="This field is required.">
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group has-error has-danger">
+                                <label for="fullname">Email <span class="text-danger">*</span></label>
+                                <input type="email" value="" class="form-control inputs" name="fullname" id="fullname" placeholder="Fullname" required="" data-error="This field is required.">
                             </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group has-error has-danger">
-                                        <label for="fullname">Message <span class="text-danger">*</span></label>
-                                        <textarea class="form-control" name="" id="" cols="30" rows="10" style="resize: none;"></textarea>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group has-error has-danger">
+                                <label for="fullname">Subject <span class="text-danger">*</span></label>
+                                <input type="text" value="" class="form-control inputs" name="fullname" id="fullname" placeholder="Fullname" required="" data-error="This field is required.">
                             </div>
-                            <a href="#sss" target="_blank" class="btn btn-success btn-reveal btn-default mt-4 ">
-                            <span>Send Message</span>
-                            </a>
-                                </div>
-                                <div class="col-4">
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <div class="offset-4 mt-5">
-                                        <a href="BiodataForm.html" class="default-btn style-2" style="background-color: #ffffff;border: 1px solid black;"><span>Apply Now!</span></a>
-                                    </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group has-error has-danger">
+                                <label for="fullname">Message <span class="text-danger">*</span></label>
+                                <textarea class="form-control" name="" id="" cols="30" rows="10" style="resize: none;"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#sss" target="_blank" class="btn btn-success btn-reveal btn-default mt-4 ">
+                    <span>Send Message</span>
+                    </a>
+                        </div>
+                        <div class="col-4">
+        
+                            <div class="offset-4 mb-2">
+                                <a href="BiodataForm.html" class="default-btn style-2" style="background-color: #ffffff;border: 1px solid black;"><span>Apply Now!</span></a>
+                            </div>
+                            <div class="location-map">
+                                <div id="map">
+                                    <iframe src="https://maps.google.com/maps?q=Alabang-Zapote, Tierra Nueva Village, Cupang, Muntinlupa City, Philippines&t=&z=10&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -66,7 +66,6 @@
             </div>
         </div>
     </div>
-<!-- ================> Page Header section end here <================== -->
 
 <!-- ===========Info Section Ends Here========== -->
 <div class="info-section padding-top padding-bottom">
@@ -115,26 +114,6 @@
 </div>
 <!-- ===========Info Section Ends Here========== -->
 
-
-
-<!-- ================> contact section start here <================== -->
-    <div class="contact-bottom">
-        <div class="contac-bottom">
-            <div class="row justify-content-center g-0">
-                <div class="col-45">
-                    <div class="location-map">
-                        <div id="map">
-                            <iframe src="https://maps.google.com/maps?q=Alabang-Zapote, Tierra Nueva Village, Cupang, Muntinlupa City, Philippines&t=&z=10&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ================> contact section end here <================== -->
-
-    @endsection
    
     @push('script')
         <script src="{{asset('/js/inquiry.js')}}"></script>
