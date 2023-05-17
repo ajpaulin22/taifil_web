@@ -2,5 +2,9 @@
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
     "/js/onepage.js": "/js/onepage.js",
-    "/js/biodata/biodata.js": "/js/biodata/biodata.js"
+    "/js/biodata/biodata.js": "/js/biodata/biodata.js",
+    "/js/admin/ManagementRegistration.js": "/js/admin/ManagementRegistration.js",
+    "/js/admin/MasterMaintenance.js": "/js/admin/MasterMaintenance.js",
+    "/css/admin/Admin.css": "/css/admin/Admin.css",
+    "/js/admin/Admin.js": "/js/admin/Admin.js"
 }

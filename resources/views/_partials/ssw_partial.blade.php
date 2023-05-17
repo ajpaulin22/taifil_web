@@ -1,6 +1,6 @@
-<div class="about padding-top padding-bottom" id="SSW_section">
+<div class="about padding-top padding-bottom" id="SSW_section" style="background-image: linear-gradient(to right top, #009572, #1d9972, #2d9d72, #3aa171, #45a571, #46a671, #48a770, #49a870, #40a670, #37a470, #2ba270, #1ca070);">
     <div class="">
-        <div class="section__header style-2 wow fadeInUp" data-wow-duration="1.5s" >
+        <div class="section__header style-2 wow fadeInUp text-white" data-wow-duration="1.5s" >
             <h2 class="text-center"><hr>SSW<hr></h2>
             <div>
                 <h6 class="text-center">What is Specified Skilled Worker Program (SSW)?</h6>

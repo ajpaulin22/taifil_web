@@ -1,4 +1,4 @@
-<div class="about about--style2 padding-top pt-xl-0" >
+<div class="about about--style2 padding-top pt-xl-0 mb-5" >
     <div class="container">
         <div class="section__wrapper wow fadeInUp" data-wow-duration="1.5s">
             <div class="row g-0 justify-content-center row-cols-lg-2 row-cols-1">

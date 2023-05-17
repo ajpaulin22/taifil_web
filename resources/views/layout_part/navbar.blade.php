@@ -62,6 +62,17 @@
                             </li>
                             <li><a href="/inquiry">Inquiry</a>
                             </li>
+                            <li class="nav-item">
+									<a class="nav-link" href="#" id="navbarDropdownMenuLink" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Admin</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<li>
+											<a href="/admin/ManagementRegistration">Management Registration</a>
+										</li>
+										<li>
+											<a href="/admin/MasterMaintenance">Master Maintenance</a>
+										</li>
+									</ul>
+								</li>
                         </ul>
                     </div>
                     <div class="header__more">

@@ -7,7 +7,6 @@
     @include('_partials.about_partial')
     @include('_partials.ttip_partial')
     @include('_partials.ssw_partial')
-    @include('_partials.how_partial')
     @include('_partials.gallery_partial')
 @endsection
 

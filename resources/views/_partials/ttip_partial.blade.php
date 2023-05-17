@@ -1,7 +1,7 @@
-<div class="about padding-top padding-bottom" id="TITP_section" style="background-image: linear-gradient(to right top, #009572, #1d9972, #2d9d72, #3aa171, #45a571, #46a671, #48a770, #49a870, #40a670, #37a470, #2ba270, #1ca070);">
+<div class="about padding-top padding-bottom" id="TITP_section" >
     <div class="container">
-        <div class="section__header style-2 text-center wow fadeInUp" data-wow-duration="1.5s" style="color: white;">
-            <h2 style="color: white;"><hr>TITP<hr></h2>
+        <div class="section__header style-2 text-center wow fadeInUp" data-wow-duration="1.5s" style="color: rgb(0, 0, 0);">
+            <h2 style="color: rgb(0, 0, 0);"><hr>TITP<hr></h2>
             <br>
             <div>
                 <h4>What is Technical Intern Training Program (TITP)?</h4>
