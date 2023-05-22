@@ -33,13 +33,42 @@ const hidelicensed = (radio) => {
 }
 
 
+function readURL(input,id) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
 
-(function () {
+        reader.onload = function (e) {
+            if(id == 1){
+                $('#imageResult1')
+                .attr('src', e.target.result);
+            }else if(id == 2){
+                $('#imageResult2')
+                .attr('src', e.target.result);
+            }else{
+                $('#imageResult3')
+                .attr('src', e.target.result);
+            }
+        };
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+
+
+
+
+
+
+$(document).ready(function () {
     'use strict'
   
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     var personaldata_form = document.querySelectorAll('#personaldata_form')
-  
+
+    $('#upload').on('change', function () {
+        readURL(input);
+    });
+
     // Loop over them and prevent submission
     Array.prototype.slice.call(personaldata_form)
       .forEach(function (personaldata_form) {
@@ -57,4 +86,4 @@ const hidelicensed = (radio) => {
           personaldata_form.classList.add('was-validated')
         }, false)
       })
-  })()
+  });
