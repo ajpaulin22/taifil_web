@@ -8,11 +8,11 @@
          <!-- ================> Page Header section start here <================== -->
 	{{-- </div> --}}
 
-    <div class="about padding-top padding-bottom" id="inquiry_section" style="background-image: linear-gradient(to right top, #009572, #1d9972, #2d9d72, #3aa171, #45a571, #46a671, #48a770, #49a870, #40a670, #37a470, #2ba270, #1ca070);height: 100vh;">
+    <div class="about padding-top padding-bottom " id="inquiry_section" style="background-image: linear-gradient(to right top, #009572, #1d9972, #2d9d72, #3aa171, #45a571, #46a671, #48a770, #49a870, #40a670, #37a470, #2ba270, #1ca070);height: 100vh;">
         <div class="container">
-            <div class="section__header style-2 text-center wow fadeInUp" data-wow-duration="1.5s" >
+            <div class="section__header style-2 text-center wow fadeInUp " data-wow-duration="1.5s" >
                 <h2 class="text-white"><hr>INQUIRY<hr></h2>
-                <div class="bg-white rounded text-start p-4 mt-4" style="background-color: white; ">
+                <div class="bg-white rounded text-start p-4 mt-4 shadow-lg animate__animated animate__bounce" style="background-color: white; ">
                     <div class="row">
                         <div class="col-8">
                             <p>Drop us a line or just say Hello!</p>
@@ -76,8 +76,8 @@
         <div class="section-wrapper">
             <div class="row justify-content-center g-4">
                 <div class="col-lg-4 col-sm-6 col-12">
-                    <div class="contact-item text-center">
-                        <div class="contact-thumb mb-4">
+                    <div class="contact-item text-center border border-success">
+                        <div class="contact-thumb mb-4 border border-success">
                             <img src="{{url('/images/contact/icon/01.png')}}" alt="contact-thumb">
                         </div>
                         <div class="contact-content">
@@ -87,8 +87,8 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 col-12">
-                    <div class="contact-item text-center">
-                        <div class="contact-thumb mb-4">
+                    <div class="contact-item text-center border border-success">
+                        <div class="contact-thumb mb-4 border border-success">
                             <img src="{{url('/images/contact/icon/02.png')}}" alt="contact-thumb">
                         </div>
                         <div class="contact-content">
@@ -98,8 +98,8 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 col-12">
-                    <div class="contact-item text-center">
-                        <div class="contact-thumb mb-4">
+                    <div class="contact-item text-center border border-success">
+                        <div class="contact-thumb mb-4 border border-success">
                             <img src="{{url('/images/contact/icon/03.png')}}" alt="contact-thumb">
                         </div>
                         <div class="contact-content">

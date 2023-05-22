@@ -1,6 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BiodateController;
+use App\Http\Controllers\InquiryController;
+use App\Http\Controllers\OnepageController;
+use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\MasterMaintenanceController;
+use App\Http\Controllers\Admin\ManagementRegistrationController;
+use App\Http\Controllers\galleryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,25 +37,30 @@ Route::group(['prefix' => 'category'],function(){
     })->name('category');
 });
 
-Route::get('/home', [App\Http\Controllers\OnepageController::class, 'index'])->name('home');
+Route::get('/home', [OnepageController::class, 'index'])->name('home');
 
 Route::group(['prefix' => 'inquiry'],function(){
-    Route::get('/',[App\Http\Controllers\InquiryController::class,'index'])->name('inquiry');
+    Route::get('/',[InquiryController::class,'index'])->name('inquiry');
 });
 
 Route::group(['prefix' => 'biodata'],function(){
-    Route::get('/',[App\Http\Controllers\BiodateController::class,'index'])->name('biodata');
+    Route::get('/',[BiodateController::class,'index'])->name('biodata');
+});
+
+Route::group(['prefix' => 'gallery'],function(){
+    Route::get('/',[galleryController::class,'index'])->name('gallery');
 });
 
 
+
 Route::group(['prefix' => 'admin'],function(){
-    Route::get('/',[App\Http\Controllers\Admin\AdminController::class,'index'])->name('admin');
+    Route::get('/',[AdminController::class,'index'])->name('admin');
 
     Route::group(['prefix' => 'MasterMaintenance'],function(){
-        Route::get('/',[App\Http\Controllers\Admin\MasterMaintenanceController::class,'index'])->name('MasterMaintenance');
+        Route::get('/',[MasterMaintenanceController::class,'index'])->name('MasterMaintenance');
     });
 
     Route::group(['prefix' => 'ManagementRegistration'],function(){
-        Route::get('/',[App\Http\Controllers\Admin\ManagementRegistrationController::class,'index'])->name('ManagementRegistration');
+        Route::get('/',[ManagementRegistrationController::class,'index'])->name('ManagementRegistration');
     });
 });

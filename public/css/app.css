@@ -5267,6 +5267,7 @@ iframe {
   width: 10px;
   height: 2px;
   background-color: #213366;
+  visibility:hidden;
 }
 .menu-item-has-children > a::before {
   top: 50%;
@@ -5278,6 +5279,7 @@ iframe {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  visibility:hidden;
 }
 @media (min-width: 992px) {
   .menu-item-has-children > a::after {
@@ -5288,6 +5290,7 @@ iframe {
     width: 10px;
     height: 2px;
     background-color: #213366;
+    visibility:hidden;
   }
   .menu-item-has-children > a::before {
     position: absolute;
@@ -5300,6 +5303,7 @@ iframe {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    visibility:hidden;
   }
 }
 .menu-item-has-children:hover > a::after {

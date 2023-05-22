@@ -44,8 +44,8 @@
                                 <a href="/home#about_section">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    TITP
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    TITP <span><i class="fa-solid fa-caret-down"></i></span>
                                   </a>
                                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li><a class="dropdown-item" href="/home#TITP_section">About</a></li>
@@ -55,8 +55,8 @@
                                   </ul>
                             </li>
                             <li>
-                                <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    SSW
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    SSW <span><i class="fa-solid fa-caret-down"></i></span>
                                   </a>
                                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li><a class="dropdown-item" href="/home#SSW_section">About</a></li>
@@ -66,8 +66,8 @@
                                   </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Direct
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Direct <span><i class="fa-solid fa-caret-down"></i></span>
                                   </a>
                                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li><a class="dropdown-item" href="/home#TITP_section">About</a></li>
@@ -77,12 +77,12 @@
                                   </ul>
                             </li>
                             <li>
-                                <a href="#0">Gallery</a>
+                                <a href="/gallery">Gallery</a>
                             </li>
                             <li><a href="/home#inquiry_section">Inquiry</a>
                             </li>
                             <li class="nav-item">
-									<a class="nav-link" href="#" id="navbarDropdownMenuLink" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Admin</a>
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Admin <span><i class="fa-solid fa-caret-down"></i></span></a>
 									<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 										<li>
 											<a href="/admin/ManagementRegistration">Management Registration</a>
@@ -100,7 +100,7 @@
                             <li><button class="dropdown-item"><img src="{{url('/images/japan.png')}}" alt="" srcset=""> Japanese</button></li>
                             <li><button class="dropdown-item"><img src="{{url('/images/united-states.png')}}" alt="" srcset=""> English</button></li>
                         </ul> --}}
-                        <ul class="dropdown-menu" id="google_translate_element"></ul>  
+                        <ul class="dropdown-menu p-0 m-0" id="google_translate_element"></ul>  
                     </div> 
                 </div>
             </nav>

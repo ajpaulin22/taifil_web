@@ -52,7 +52,17 @@ mix.js('resources/js/app.js', 'public/js')
 
     .scripts(["public/js/app.js",
               "resources/js/admin/Admin.js"
-    ],'public/js/admin/Admin.js');
+<<<<<<< HEAD
+    ],'public/js/admin/Admin.js')
+
+    .styles(["resources/css/Custom/partial/gallery.css"],"public/css/Custom/partial/gallery.css")
+    .scripts("resources/js/DesignJS/gallery_partial.js","public/js/DesignJS/gallery_partial.js");
 
     
 
+=======
+    ],'public/js/admin/Admin.js')
+
+    .styles(["resources/css/Custom/partial/gallery.css"],"public/css/Custom/partial/gallery.css")
+    .scripts("resources/js/DesignJS/gallery_partial.js","public/js/DesignJS/gallery_partial.js");
+>>>>>>> 4b724b5745717413c01a33752c249dc676f5e22f
