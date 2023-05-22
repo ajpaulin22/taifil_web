@@ -92,7 +92,7 @@
                             </ul>
                         </div>
                         <div class="card-footer text-center">
-                            <a href="#" class="btn btn-primary text-center">Apply now</a>
+                            <a href="/biodata" class="btn btn-primary text-center">Apply now</a>
                         </div>
                     </div>
                   </div>
@@ -127,7 +127,7 @@
                             </ul>
                         </div>
                         <div class="card-footer text-center">
-                            <a href="#" class="btn btn-primary text-center">Apply now</a>
+                            <a href="/biodata" class="btn btn-primary text-center">Apply now</a>
                         </div>
                     </div>
                   </div>
@@ -162,7 +162,7 @@
                             </ul>
                         </div>
                         <div class="card-footer text-center">
-                            <a href="#" class="btn btn-primary text-center">Apply now</a>
+                            <a href="/biodata" class="btn btn-primary text-center">Apply now</a>
                         </div>
                     </div>
                   </div>

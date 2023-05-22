@@ -48,7 +48,7 @@
 								  <div class="row g-3">
 									  @if($biodata == "SSW")
 									  <div class="col-md-3">
-										<label for="personal_prometric" class="form-label">Prometric</label>
+										<label for="personal_prometric" class="form-label">Prometric<span style="color:red">*</span>:</label>
 										<select name="personal_prometric" class="form-select" id="personal_prometric" required>
 										  <option selected disabled value="">Choose...</option>
 										  <option>...</option>
@@ -58,7 +58,7 @@
 										</div>
 									  </div>
 									  <div class="col-md-3">
-										<label for="personal_jlc" class="form-label">Japanese Language Certificate</label>
+										<label for="personal_jlc" class="form-label">Japanese Language Certificate<span style="color:red">*</span>:</label>
 										<select name="personal_jlc" class="form-select" id="personal_jlc" required>
 										  <option selected disabled value="">Choose...</option>
 										  <option>...</option>
@@ -69,7 +69,7 @@
 									  </div>
 									  @endif
 									  <div class="col-md-3">
-										<label for="personal_code" class="form-label">Code</label>
+										<label for="personal_code" class="form-label">Code<span style="color:red">*</span>:</label>
 										<select name="personal_code" class="form-select" id="personal_code" required>
 										  <option selected disabled value="">Choose...</option>
 										  <option>...</option>
@@ -79,7 +79,7 @@
 										</div>
 									  </div>	
 									  <div class="col-md-3">
-										<label for="personal_jobcat" class="form-label">Job Categories</label>
+										<label for="personal_jobcat" class="form-label">Job Categories<span style="color:red">*</span>:</label>
 										<select name="personal_jobcat" class="form-select" id="personal_jobcat" required>
 										  <option selected disabled value="">Choose...</option>
 										  <option>...</option>
@@ -89,7 +89,7 @@
 										</div>
 									  </div>
 									  <div class="col-md-3">
-										<label for="personal_operation" class="form-label">Operations</label>
+										<label for="personal_operation" class="form-label">Operations<span style="color:red">*</span>:</label>
 										<select name="personal_operations" class="form-select" id="personal_operation" required>
 										  <option selected disabled value="">Choose...</option>
 										  <option>...</option>
@@ -101,21 +101,21 @@
 								  </div>
 								  <div class="row g-3 mt-1 ">
 									<div class="col-md-3">
-										<label for="personal_lastname" class="form-label">Last Name</label>
+										<label for="personal_lastname" class="form-label">Last Name<span style="color:red">*</span>:</label>
 										<input name="personal_lastname" type="text" class="form-control" id="personal_lastname" required>
 										<div class="invalid-feedback">
 										  Please provide a Last Name
 										</div>
 									</div>
 									<div class="col-md-3">
-										<label for="personal_firstname" class="form-label">First Name</label>
+										<label for="personal_firstname" class="form-label">First Name<span style="color:red">*</span>:</label>
 										<input name="personal_firstname" type="text" class="form-control" id="personal_firstname" required>
 										<div class="invalid-feedback">
 										  Please provide a First Name
 										</div>
 									</div>
 									<div class="col-md-3">
-										<label for="personal_middlename" class="form-label">Middle Name</label>
+										<label for="personal_middlename" class="form-label">Middle Name<span style="color:red">*</span>:</label>
 										<input name="personal_middlename" type="text" class="form-control" id="personal_middlename" required>
 										<div class="invalid-feedback">
 										  Please provide a Middle Name
@@ -130,28 +130,28 @@
 									</div>
 									{{-- //////////////////////////////////////////////////////////////////////////////////////// --}}
 									<div class="col-md-12">
-										<label for="personal_address" class="form-label">Present Address</label>
+										<label for="personal_address" class="form-label">Present Address<span style="color:red">*</span>:</label>
 										<input name="personal_address" type="text" class="form-control" id="personal_address" required>
 										<div class="invalid-feedback">
 										  Please provide a valid Address
 										</div>
 									</div>
 									<div class="col-md-3">
-										<label for="personal_birthdate" class="form-label">Date of Birth</label>
+										<label for="personal_birthdate" class="form-label">Date of Birth<span style="color:red">*</span>:</label>
 										<input name="personal_birthdate" type="date" class="form-control" id="personal_birthdate" required>
 										<div class="invalid-feedback">
 										  Please provide a Date of Birth
 										</div>
 									</div>
 									<div class="col-md-3">
-										<label for="personal_placebirth" class="form-label">Place of Birth</label>
+										<label for="personal_placebirth" class="form-label">Place of Birth<span style="color:red">*</span>:</label>
 										<input name="personal_placebirth" type="text" class="form-control" id="personal_placebirth" required>
 										<div class="invalid-feedback">
 										  Please provide a Place of Birth
 										</div>
 									</div>
 									<div class="col-md-3">
-										<span>Gender: </span>
+										<span>Gender<span style="color:red">*</span>: </span>
 										<br>
 										<br>
 										<div class="form-check form-check-inline">
@@ -164,7 +164,7 @@
 										</div>
 									</div>
 									<div class="col-md-3">
-										<label for="personal_citizenship" class="form-label">Citizenship</label>
+										<label for="personal_citizenship" class="form-label">Citizenship<span style="color:red">*</span>:</label>
 										<select name="personal_citizenship" class="form-select" id="personal_citizenship" required>
 											<option selected disabled value="">Choose...</option>
 											<option>Filipino</option>
@@ -175,21 +175,21 @@
 										  </div>
 									</div>
 									<div class="col-md-2">
-										<label for="personal_age" class="form-label">Age</label>
+										<label for="personal_age" class="form-label">Age<span style="color:red">*</span>:</label>
 										<input name="personal_age" type="number" class="form-control" id="personal_age" required>
 										<div class="invalid-feedback">
 										  Please provide age
 										</div>
 									</div>
 									<div class="col-md-2">
-										<label for="personal_blood" class="form-label">Blood Type</label>
+										<label for="personal_blood" class="form-label">Blood Type<span style="color:red">*</span>:</label>
 										<input name="personal_blood" type="text" class="form-control" id="personal_blood" required>
 										<div class="invalid-feedback">
 										  Please provide a Blood type
 										</div>
 									</div>
 									<div class="col-md-3">
-										<label for="personal_civilstatus" class="form-label">Civil Status</label>
+										<label for="personal_civilstatus" class="form-label">Civil Status<span style="color:red">*</span>:</label>
 										<select name="personal_civilstatus" class="form-select" id="personal_civilstatus" required>
 											<option selected disabled value="">Choose...</option>
 											<option>Single</option>
@@ -202,7 +202,7 @@
 										</div>
 									</div>
 									<div class="col-md-3">
-										<label for="personal_contact" class="form-label">Contact Number</label>
+										<label for="personal_contact" class="form-label">Contact Number<span style="color:red">*</span>:</label>
 										<input name="personal_contact" type="number" class="form-control" id="personal_contact" required>
 										<div class="invalid-feedback">
 										  Please provide a valid contact
@@ -218,7 +218,7 @@
 									</div>
 									{{-- ////////////////////////////////////////////////////////////////////////// --}}
 									<div class="col-md-3">
-										<label for="personal_religion" class="form-label">Religion</label>
+										<label for="personal_religion" class="form-label">Religion<span style="color:red">*</span>:</label>
 										<input name="personal_religion" type="text" class="form-control" id="personal_religion" required>
 										<div class="invalid-feedback">
 										  Please provide a Religion
@@ -252,7 +252,7 @@
 										</div>
 									</div>
 									<div class="col-md-6">
-										<label class="form-label">Japanese Language: </label>
+										<label class="form-label">Japanese Language<span style="color:red">*</span>: </label>
 										<div class="form-check form-check-inline">
 											<input class="form-check-input" type="checkbox" id="personal_japlang_reading" value="reading" checked>
 											<label class="form-check-label" for="personal_japlang_reading">Reading</label>
@@ -289,56 +289,56 @@
 										</div>
 									</div>
 									<div class="col-md-6">
-										<label for="personal_persontonotify" class="form-label">Person to notify in case o emergency</label>
+										<label for="personal_persontonotify" class="form-label">Person to notify in case o emergency<span style="color:red">*</span>:</label>
 										<input name="personal_persontonotify" type="text" class="form-control" id="personal_persontonotify" required>
 										<div class="invalid-feedback">
 										  Please provide a person
 										</div>
 									</div>
 									<div class="col-md-4">
-										<label for="personal_personrelation" class="form-label">Relation</label>
+										<label for="personal_personrelation" class="form-label">Relation<span style="color:red">*</span>:</label>
 										<input name="personal_personrelation" type="text" class="form-control" id="personal_personrelation" required>
 										<div class="invalid-feedback">
 										  Please provide a relation
 										</div>
 									</div>
 									<div class="col-md-4">
-										<label for="personal_personaddress" class="form-label">Address</label>
+										<label for="personal_personaddress" class="form-label">Address<span style="color:red">*</span>:</label>
 										<input name="personal_personaddress" type="text" class="form-control" id="personal_personaddress" required>
 										<div class="invalid-feedback">
 										  Please provide a person address
 										</div>
 									</div>
 									<div class="col-md-4">
-										<label for="personal_persontcontact" class="form-label">Contact No.</label>
+										<label for="personal_persontcontact" class="form-label">Contact No<span style="color:red">*</span>:</label>
 										<input name="personal_persontcontact" type="number" class="form-control" id="personal_persontcontact" required>
 										<div class="invalid-feedback">
 										  Please provide a person contact
 										</div>
 									</div>
 									<div class="col-md-4">
-										<label for="personal_passportno" class="form-label">Passport No.</label>
+										<label for="personal_passportno" class="form-label">Passport No<span style="color:red">*</span>:</label>
 										<input name="personal_passportno" type="text" class="form-control" id="personal_passportno" required>
 										<div class="invalid-feedback">
 										  Please provide a passport no.
 										</div>
 									</div>
 									<div class="col-md-2">
-										<label for="personal_passportissue" class="form-label">Issue Date</label>
+										<label for="personal_passportissue" class="form-label">Issue Date<span style="color:red">*</span>:</label>
 										<input name="personal_passportissue" type="date" class="form-control" id="personal_passportissue" required>
 										<div class="invalid-feedback">
 										  Please provide a issue date
 										</div>
 									</div>
 									<div class="col-md-2">
-										<label for="personal_passportexpiry" class="form-label">Expiry Date</label>
+										<label for="personal_passportexpiry" class="form-label">Expiry Date<span style="color:red">*</span>:</label>
 										<input name="personal_passportexpiry" type="date" class="form-control" id="personal_passportexpiry" required>
 										<div class="invalid-feedback">
 										  Please provide a expiry date
 										</div>
 									</div>
 									<div class="col-md-4">
-										<label for="personal_passportissueplace" class="form-label">Issue place</label>
+										<label for="personal_passportissueplace" class="form-label">Issue place<span style="color:red">*</span>:</label>
 										<input name="personal_passportissueplace" type="text" class="form-control" id="personal_passportissueplace" required>
 										<div class="invalid-feedback">
 										  Please provide a place of issue
@@ -624,7 +624,7 @@
 								  Please provide occupation
 								</div>
 							</div>
-							<div class="col-md-3">
+							<div class="col-md-3 ">
 								<label for="family_father_cp" class="form-label">CP No.</label>
 								<input name="family_father_cp" type="text" class="form-control" id="family_father_cp" required>
 								<div class="invalid-feedback">
@@ -757,35 +757,35 @@
 									</div>
 									<div class="col-md-3">
 										<label for="family_loveone_name" class="form-label">Name</label>
-										<input name="family_loveone_name" type="text" class="form-control" id="family_loveone_name">
+										<input name="family_loveone_name" type="text" class="form-control" id="family_loveone_name" required>
 										<div class="invalid-feedback">
 										  Please provide name
 										</div>
 									</div>
 									<div class="col-md-2">
 										<label for="family_loveone_birth" class="form-label">Birth Date</label>
-										<input name="family_loveone_birth" type="date" class="form-control" id="family_loveone_birth">
+										<input name="family_loveone_birth" type="date" class="form-control" id="family_loveone_birth" required>
 										<div class="invalid-feedback">
 										  Please provide birth
 										</div>
 									</div>
 									<div class="col-md-3">
 										<label for="family_loveone_occupation" class="form-label">Occupation</label>
-										<input name="family_loveone_occupation" type="text" class="form-control" id="family_loveone_occupation">
+										<input name="family_loveone_occupation" type="text" class="form-control" id="family_loveone_occupation" required>
 										<div class="invalid-feedback">
 										  Please provide occupation
 										</div>
 									</div>
 									<div class="col-md-3">
 										<label for="family_loveone_cp" class="form-label">CP No.</label>
-										<input name="family_loveone_cp" type="text" class="form-control" id="family_loveone_cp">
+										<input name="family_loveone_cp" type="text" class="form-control" id="family_loveone_cp" required>
 										<div class="invalid-feedback">
 										  Please provide cp
 										</div>
 									</div>
 									<div class="col-md-11 offset-1">
 										<label for="family_loveone_address" class="form-label">Address</label>
-										<input name="family_loveone_address" type="text" class="form-control" id="family_loveone_address">
+										<input name="family_loveone_address" type="text" class="form-control" id="family_loveone_address" required>
 										<div class="invalid-feedback">
 										  Please provide address
 										</div>
@@ -982,9 +982,23 @@
 						</form>
 					</div>
 					<div class="tab-pane fade" id="Upload">
-						<div class="m-4">
-							<input id='file-input' type='file' multiple/>
-						</div>
+						<form class="row g-3 mt-2" novalidate>
+							<div class="col-md-4">
+								<div class="image-area mt-4"><img id="imageResult1" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
+								<input type="file" class="form-control" onchange="readURL(this,1);"  aria-label="file example" required>
+								<div class="invalid-feedback">Example invalid form file feedback</div>
+							</div>
+							<div class="col-md-4">
+								<div class="image-area mt-4"><img id="imageResult2" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
+								<input type="file" class="form-control" onchange="readURL(this,2);" aria-label="file example" required>
+								<div class="invalid-feedback">Example invalid form file feedback</div>
+							</div>
+							<div class="col-md-4">
+								<div class="image-area mt-4"><img id="imageResult3" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
+								<input type="file" class="form-control" onchange="readURL(this,3);" aria-label="file example" required>
+								<div class="invalid-feedback">Example invalid form file feedback</div>
+							</div>
+						</form>
 					</div>
 					<a href="#EmploymentRecord_Local" class="btn btn-secondary offset-11" id="addAcquantances" style="margin-top: 1rem;">SAVE</a>	
 				</div>

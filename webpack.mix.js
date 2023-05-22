@@ -44,7 +44,7 @@ mix.js('resources/js/app.js', 'public/js')
 
     .scripts(['resources/js/onepage.js'],"public/js/onepage.js")
 
-    .scripts('resources/js/biodata/biodata.js',"public/js/biodata/biodata.js")
+    .scripts(['public/js/app.js','resources/js/biodata/biodata.js'],"public/js/biodata/biodata.js")
     .scripts('resources/js/admin/ManagementRegistration.js','public/js/admin/ManagementRegistration.js')
     .scripts('resources/js/admin/MasterMaintenance.js','public/js/admin/MasterMaintenance.js')
 

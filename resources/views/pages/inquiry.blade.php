@@ -51,10 +51,6 @@
                     </a>
                         </div>
                         <div class="col-4">
-        
-                            <div class="offset-4 mb-2">
-                                <a href="BiodataForm.html" class="default-btn style-2" style="background-color: #ffffff;border: 1px solid black;"><span>Apply Now!</span></a>
-                            </div>
                             <div class="location-map">
                                 <div id="map">
                                     <iframe src="https://maps.google.com/maps?q=Alabang-Zapote, Tierra Nueva Village, Cupang, Muntinlupa City, Philippines&t=&z=10&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
