@@ -6,5 +6,7 @@
     "/js/admin/ManagementRegistration.js": "/js/admin/ManagementRegistration.js",
     "/js/admin/MasterMaintenance.js": "/js/admin/MasterMaintenance.js",
     "/css/admin/Admin.css": "/css/admin/Admin.css",
-    "/js/admin/Admin.js": "/js/admin/Admin.js"
+    "/js/admin/Admin.js": "/js/admin/Admin.js",
+    "/css/Custom/partial/gallery.css": "/css/Custom/partial/gallery.css",
+    "/js/DesignJS/gallery_partial.js": "/js/DesignJS/gallery_partial.js"
 }

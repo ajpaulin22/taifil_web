@@ -1,0 +1,8 @@
+.partial_imagecard:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 10px 50px ;
+}
+
+.partial_imagecard{
+    transition: transform 0.2s ease;
+}
