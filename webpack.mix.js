@@ -53,3 +53,6 @@ mix.js('resources/js/app.js', 'public/js')
     .scripts(["public/js/app.js",
               "resources/js/admin/Admin.js"
     ],'public/js/admin/Admin.js');
+
+    
+
