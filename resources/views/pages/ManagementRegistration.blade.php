@@ -66,36 +66,47 @@
             <table class="table table-bordered tbl-100p" data-adjust="-30" id="tblHeadCount">
                 <thead>
                     <tr>
-                        <th style="width: 2%;"><input type="checkbox" id="chkAll"></th>
-                        <th style="width: 7%;">ID</th>
-                        <th style="width: 20%;">Name</th>
-                        <th style="width: 20%;">Code</th>
-                        <th style="width: 20%;">Job Categories</th>
-                        <th style="width: 20%;">Operations</th>
-                        <th style="width: 4%;">Age</th>
-                        <th style="width: 7%;">Sent To Abroad</th>
+                        <th rowspan="2" style="width: 2%;"><input type="checkbox" id="chkAll"></th>
+                        <th rowspan="2" style="width: 7%;">ID</th>
+                        <th rowspan="2" style="width: 20%;">Name</th>
+                        <th rowspan="2" style="width: 20%;">Job Categories</th>
+                        <th colspan="3" style="width: 20%;">Interview History</th>
+                        <th rowspan="2" style="width: 4%;">Age</th>
+                        <th rowspan="2" style="width: 7%;">Sent To Abroad</th>
+                    </tr>
+                    <tr>
+                        <th>Show/No Show</th>
+                        <th>InterviewDate</th>
+                        <th>Company</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td><input class="form-control" type="text"></td>
-                        <td><input class="form-control" type="text"></td>
-                        <td><input class="form-control" type="text"></td>
-                        <td><input class="form-control" type="text"></td>
-                        <td></td>
-                        <td></td>
+                        <td name="checkbox"></td>
+                        <td name="ID"></td>
+                        <td name="Name"><input class="form-control" type="text"></td>
+                        <td name="JobCategories"><input class="form-control" type="text"></td>
+                        <td name="Show"></td>
+                        <td name="InterviewDate"></td>
+                        <td name="Company"><input class="form-control" type="text"></td>
+                        <td name="Age"></td>
+                        <td name="ToAbroad"></td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox"></td>
-                        <td>1</td>
-                        <td>Jenefer Raquin</td>
-                        <td>Agriculture</td>
-                        <td>Cultivate Agriculture</td>
-                        <td>Fruit Growing</td>
-                        <td>20</td>
-                        <td>
+                        <td name="checkbox"><input type="checkbox"></td>
+                        <td name="ID">1</td>
+                        <td name="Name">Jenefer Raquin</td>
+                        <td name="JobCategories">Cultivate Agriculture</td>
+                        <td name=Show>
+                            <select class="form-control">
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+                        </td>
+                        <td name="InterviewDate"><input class="form-control" type="text"></td>
+                        <td name="Company"><input class="form-control" type="text"></td>
+                        <td name="Age">20</td>
+                        <td name="ToAbroad">
                             <select class="form-control">
                                 <option value="0">No</option>
                                 <option value="1">Yes</option>
@@ -106,9 +117,15 @@
                         <td><input type="checkbox"></td>
                         <td>2</td>
                         <td>Lenard Robenta</td>
-                        <td>Agriculture</td>
                         <td>Cultivate Agriculture</td>
-                        <td>Fruit Growing</td>
+                        <td name=Show>
+                            <select class="form-control">
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+                        </td>
+                        <td name="InterviewDate"><input class="form-control" type="text"></td>
+                        <td name="Company"><input class="form-control" type="text"></td>
                         <td>45</td>
                         <td>
                             <select class="form-control">
