@@ -69,7 +69,7 @@
         <div class="section__header style-2 text-center">
             <h2>Contact Info</h2>
         </div>
-        <div class="section-wrapper">
+        <div class="section-wrapper wow fadeInUp">
             <div class="row justify-content-center g-4">
                 <div class="col-lg-4 col-sm-6 col-12">
                     <div class="contact-item text-center border border-success">

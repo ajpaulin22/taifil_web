@@ -28,7 +28,7 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="row">
                     <div class="col-auto" style="padding-right: 0;">
-                        <a class="navbar-brand" href="/home"><img src="/images/logo/logo.jpg" alt="logo"></a>
+                        <a class="navbar-brand" href="/home#"><img src="/images/logo/logo.jpg" alt="logo"></a>
                     </div>
                     <div class="col-auto p-0">
                         <p class="mb-0 text-white font-weight-bold" >Tai-Fil <br> Manpower <br> Services Corp.</p>
@@ -43,7 +43,7 @@
                     <div class="navbar-nav mainmenu">
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/home">Home</a>
+                                <a class="nav-link active" aria-current="page" href="/home#">Home</a>
                             </li>
                             <li>
                                 <a href="/home#about_section">About</a>
@@ -53,10 +53,10 @@
                                     TITP <span><i class="fa-solid fa-caret-down"></i></span>
                                   </a>
                                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="/home#TITP_section">About</a></li>
-                                    <li><a class="dropdown-item" href="/qualifications">Qualifications</a></li>
-                                    <li><a class="dropdown-item" href="/category">Job Category</a></li>
-                                    <li><a class="dropdown-item" href="/biodata?data=TITP">Apply Now</a></li>
+                                    <li><a href="/home#TITP_section">About</a></li>
+                                    <li><a href="/qualifications">Qualifications</a></li>
+                                    <li><a href="/category">Job Category</a></li>
+                                    <li><a href="/biodata?data=TITP">Apply Now</a></li>
                                   </ul>
                             </li>
                             <li>
@@ -64,10 +64,10 @@
                                     SSW <span><i class="fa-solid fa-caret-down"></i></span>
                                   </a>
                                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="/home#SSW_section">About</a></li>
-                                    <li><a class="dropdown-item" href="/qualifications">Qualifications</a></li>
-                                    <li><a class="dropdown-item" href="/category">Job Category</a></li>
-                                    <li><a class="dropdown-item" href="/biodata?data=SSW">Apply Now</a></li>
+                                    <li><a href="/home#SSW_section">About</a></li>
+                                    <li><a href="/qualifications">Qualifications</a></li>
+                                    <li><a href="/category">Job Category</a></li>
+                                    <li><a href="/biodata?data=SSW">Apply Now</a></li>
                                   </ul>
                             </li>
                             <li class="nav-item">
@@ -75,10 +75,10 @@
                                     Direct <span><i class="fa-solid fa-caret-down"></i></span>
                                   </a>
                                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="/home#TITP_section">About</a></li>
-                                    <li><a class="dropdown-item" href="/qualifications">Qualifications</a></li>
-                                    <li><a class="dropdown-item" href="/category">Job Category</a></li>
-                                    <li><a class="dropdown-item" href="/biodata?data=Direct" id="directBio">Apply Now</a></li>
+                                    <li><a href="/home#TITP_section">About</a></li>
+                                    <li><a href="/qualifications">Qualifications</a></li>
+                                    <li><a href="/category">Job Category</a></li>
+                                    <li><a href="/biodata?data=Direct" id="directBio">Apply Now</a></li>
                                   </ul>
                             </li>
                             <li>
