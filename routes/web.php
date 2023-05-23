@@ -37,7 +37,7 @@ Route::group(['prefix' => 'category'],function(){
     })->name('category');
 });
 
-Route::get('/home', [OnepageController::class, 'index'])->name('home');
+Route::get('/', [OnepageController::class, 'index'])->name('home');
 
 Route::group(['prefix' => 'inquiry'],function(){
     Route::get('/',[InquiryController::class,'index'])->name('inquiry');

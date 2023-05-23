@@ -44,25 +44,16 @@ mix.js('resources/js/app.js', 'public/js')
 
     .scripts(['resources/js/onepage.js'],"public/js/onepage.js")
 
-    .scripts(['public/js/app.js','resources/js/biodata/biodata.js'],"public/js/biodata/biodata.js")
+    .scripts(['public/js/app.js','resources/js/biodata/biodata.js']
+        ,"public/js/biodata/biodata.js")
     .scripts('resources/js/admin/ManagementRegistration.js','public/js/admin/ManagementRegistration.js')
     .scripts('resources/js/admin/MasterMaintenance.js','public/js/admin/MasterMaintenance.js')
 
-    .styles(["public/css/app.css",],'public/css/admin/Admin.css')
+    .styles(["public/css/app.css"],'public/css/admin/Admin.css')
 
     .scripts(["public/js/app.js",
               "resources/js/admin/Admin.js"
-<<<<<<< HEAD
     ],'public/js/admin/Admin.js')
 
     .styles(["resources/css/Custom/partial/gallery.css"],"public/css/Custom/partial/gallery.css")
     .scripts("resources/js/DesignJS/gallery_partial.js","public/js/DesignJS/gallery_partial.js");
-
-    
-
-=======
-    ],'public/js/admin/Admin.js')
-
-    .styles(["resources/css/Custom/partial/gallery.css"],"public/css/Custom/partial/gallery.css")
-    .scripts("resources/js/DesignJS/gallery_partial.js","public/js/DesignJS/gallery_partial.js");
->>>>>>> 4b724b5745717413c01a33752c249dc676f5e22f

@@ -70,7 +70,7 @@
                         <th rowspan="2" style="width: 7%;">ID</th>
                         <th rowspan="2" style="width: 20%;">Name</th>
                         <th rowspan="2" style="width: 20%;">Job Categories</th>
-                        <th colspan="3" style="width: 20%;">Interview History</th>
+                        <th colspan="3" style="width: 20%; text-align:center;">Interview History</th>
                         <th rowspan="2" style="width: 4%;">Age</th>
                         <th rowspan="2" style="width: 7%;">Sent To Abroad</th>
                     </tr>
@@ -119,7 +119,7 @@
                         <td>Lenard Robenta</td>
                         <td>Cultivate Agriculture</td>
                         <td name=Show>
-                            <select class="form-control">
+                            <select class="form-control" id="Show">
                                 <option value="0">No</option>
                                 <option value="1">Yes</option>
                             </select>
@@ -142,5 +142,5 @@
 @endsection
 
 @push('scripts')
-    <script src="{{asset('/js/ManagementRegistration.js')}}"></script>
+    <script src="{{asset('/js/admin/ManagementRegistration.js')}}"></script>
 @endpush
