@@ -1,10 +1,10 @@
-<div class="about about--style2 padding-top pt-xl-0 mb-5" >
-    <div class="container">
+<div class="" >
+    <div class="container p-4">
         <div class="section__wrapper wow fadeInUp" data-wow-duration="1.5s">
             <div class="row g-0 justify-content-center row-cols-lg-2 row-cols-1">
                 
-                <div class="col">
-                    <div class="about__right" style="background-image: linear-gradient(to right top, #009572, #1d9972, #2d9d72, #3aa171, #45a571, #46a671, #48a770, #49a870, #40a670, #37a470, #2ba270, #1ca070);">
+                <div class="col ">
+                    <div class="about__right p-5" style="background-image: linear-gradient(to right top, #009572, #1d9972, #2d9d72, #3aa171, #45a571, #46a671, #48a770, #49a870, #40a670, #37a470, #2ba270, #1ca070);">
                         <div class="about__title">
                             <h3>Depatures <span id="YearDepartureUI">2023</span></h3>
                         </div>
@@ -98,8 +98,8 @@
                         </form>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="about__right" style="background-image: linear-gradient(to right top, #53aa71, #53aa71, #53aa71, #53aa71, #53aa71, #4ea871, #4aa771, #45a571, #3aa171, #2d9d72, #1d9972, #009572);">
+                <div class="col ">
+                    <div class="about__right p-5" style="background-image: linear-gradient(to right top, #53aa71, #53aa71, #53aa71, #53aa71, #53aa71, #4ea871, #4aa771, #45a571, #3aa171, #2d9d72, #1d9972, #009572);">
                         
                         <form action="#">
                             <div class="row justify-content-center">
