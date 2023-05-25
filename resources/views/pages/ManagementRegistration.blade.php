@@ -81,37 +81,40 @@
                 <button type="button" id="btnAdd" class="btn btn-sm btn-primary btn-block" style="width: 150px;"><span class="fa fa-plus"></span><span class="btnLabel">Add Applicant</span></button>
             </div>
             <div class="col-sm-1 mb-2" style='padding-right:0px; margin-right: 5px; width:5.33333%'>
-                <button type="button" id="btnEdit" class="btn btn-sm btn-primary btn-block" style="width: 100px;"><span class="fa fa-edit"></span><span class="btnLabel">Edit</span></button>
+                <button type="button" id="btnEdit" class="btn btn-sm btn-warning btn-block" style="width: 100px;"><span class="fa fa-edit"></span><span class="btnLabel">Edit</span></button>
             </div>
             <div class="col-sm-1 mb-2" style='padding-right:0px; margin-right: 5px; width:5.33333%'>
                 <button type="button" id="btnDelete" class="btn btn-sm btn-danger btn-block" style="width: 100px;"><span class="fa fa-trash"></span><span class="btnLabel">Delete</span></button>
             </div>
-            <div class="col-sm-3 offset-6 mb-2">
-                <button type="button" id="btnSave" class="btn btn-sm btn-green btn-block" style="width: 200px;"><span class="fa fa-save"></span><span class="btnLabel">Update Applicant Status</span></button>
+            <div class="col-sm-2 offset-6 mb-2" style='text-align: right;'>
+                <button type="button" id="btnSave" class="btn btn-sm btn-primary btn-block" style="width: 200px;"><span class="fa fa-save"></span><span class="btnLabel">Update Applicant Status</span></button>
+            </div>
+            <div class="col-sm-1 mb-2">
+                <button type="button" id="btnDownloadExcel" class="btn btn-sm btn-success btn-block" style="width: 200px;"><span class="fa fa-file-excel-o"></span><span class="btnLabel">Generate Excel</span></button>
             </div>
         </div>
         <div class="table-responsive xs " style='overflow-x: visible !important'>
             <table class="table table-striped table-bordered tbl-100p display" style='width: 100%;' data-adjust="-30" id="tblManagementRegistration">
                 <thead style='border: 1px solid black;'>
                     <tr>
-                        <th rowspan="2" class='HeaderTable' style='padding-bottom:25px;'></th>
-                        <th rowspan="2" class='HeaderTable' style='margin:auto;text-align:center;'>ID</th>
-                        <th rowspan="2" class='HeaderTable'>Name</th>
-                        <th rowspan="2" class='HeaderTable'>Job Categories</th>
-                        <th rowspan="2" class='HeaderTable'>Program</th>
-                        <th colspan="3" style='text-align: center;'>Interview History</th>
-                        <th rowspan="2" class='HeaderTable'>Age</th>
-                        <th rowspan="2" class='HeaderTable'>Sent To Abroad</th>
+                        <th rowspan="2" class='HeaderTable' style='padding-bottom:25px; border: 1px solid gray !important;'></th>
+                        <th rowspan="2" class='HeaderTable' style='margin:auto;text-align:center; border: 1px solid gray !important;'>ID</th>
+                        <th rowspan="2" class='HeaderTable' style='border: 1px solid gray !important'>Name</th>
+                        <th rowspan="2" class='HeaderTable' style='border: 1px solid gray !important'>Job Categories</th>
+                        <th rowspan="2" class='HeaderTable' style='border: 1px solid gray !important'>Program</th>
+                        <th colspan="3" style='text-align: center; border: 1px solid gray !important'>Interview History</th>
+                        <th rowspan="2" class='HeaderTable' style='border: 1px solid gray !important'>Age</th>
+                        <th rowspan="2" class='HeaderTable' style='border: 1px solid gray !important'>Sent To Abroad</th>
                     </tr>
                     <tr>
-                        <th style='text-align:center'>Show/No Show</th>
-                        <th style='text-align:center'>InterviewDate</th>
-                        <th style='text-align:center'>Company</th>
+                        <th style='text-align:center; border: 1px solid gray !important;'>Show/No Show</th>
+                        <th style='text-align:center; border: 1px solid gray !important;'>InterviewDate</th>
+                        <th style='text-align:center; border: 1px solid gray !important;'>Company</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td name="checkbox"><input type="checkbox"></td>
+                        <td name="checkbox" ><input type="checkbox"></td>
                         <td name="ID" style='text-align: center;'></td>
                         <td name="Name"></td>
                         <td name="JobCategories"></td>
