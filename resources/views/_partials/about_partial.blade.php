@@ -4,7 +4,7 @@
     }
 </style>
 <div id="about_section" style="background-color:white;">
-    <div class="container">
+    <div class="container ">
         <div class="section__header style-2 text-center wow fadeInUp" data-wow-duration="1.5s" >
             <h2 class="text-green"><hr> ABOUT<hr></h2>
             <br>
@@ -38,7 +38,7 @@
                         overseas manpower placement industry.</p>
                 </div>
             </div>
-            <div class="row m-4 ">
+            <div class="row m-4">
                 <div class="col-4">
                     <img src="{{url('/images/logo/POEA.jpg')}}" alt="">
                 </div>

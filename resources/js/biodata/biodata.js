@@ -32,6 +32,28 @@ const hidelicensed = (radio) => {
     }
 }
 
+const hidejapan = (radio) => {
+    console.log(radio.value)
+    if(radio.value == 1){
+        document.getElementById('japanQA').removeAttribute('hidden')
+        document.getElementById('japanQA').removeAttribute('hidden')
+    }else{
+        document.getElementById('japanQA').hidden = true
+        document.getElementById('japanQA').hidden = true
+    }
+}
+
+const hidevisa = (radio) => {
+    console.log(radio.value)
+    if(radio.value == 1){
+        document.getElementById('visaQA').removeAttribute('hidden')
+        document.getElementById('visaQA').removeAttribute('hidden')
+    }else{
+        document.getElementById('visaQA').hidden = true
+        document.getElementById('visaQA').hidden = true
+    }
+}
+
 
 function readURL(input,id) {
     if (input.files && input.files[0]) {
