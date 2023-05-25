@@ -46,9 +46,7 @@
                 <br>
                 <p>No duration restrictions</p>
                 <p>You can bring your family to Japan.</p>
-                
             </div>
-
         </div>
     </div>
 </div>

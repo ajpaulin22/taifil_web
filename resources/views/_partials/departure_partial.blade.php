@@ -5,7 +5,7 @@
                 <div class="col ">
                     <div class="about__right p-5">
                         <div class="about__title">
-                            <h3>Depatures <span id="YearDepartureUI">2023</span></h3>
+                            <h3 style='text-align:center'>Departures <span id="YearDepartureUI">2023</span></h3>
                         </div>
                         <form action="#">
                             <div class="row g-3">
