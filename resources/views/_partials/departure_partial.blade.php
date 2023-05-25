@@ -2,12 +2,13 @@
     <div class="container p-4">
         <div class="section__wrapper wow fadeInUp" data-wow-duration="1.5s">
             <div class="justify-content-center row-cols-lg-2 row-cols-1 shadow-lg rounded" style="background-image: linear-gradient(to right top, #53aa71, #53aa71, #53aa71, #53aa71, #53aa71, #4ea871, #4aa771, #45a571, #3aa171, #2d9d72, #1d9972, #009572);">
-                <div class="about__title text-center w-100 p-2 pt-5">
-                    <h3>DEPARTURES <span id="YearDepartureUI">2023</span></h3>
-                </div>
+               
                 <div class="row w-100">
                     <div class="col ">
-                        <div class="about__right px-5 pb-3 mt-4">
+                        <div class="about__right px-5 pb-3">
+                            <div class="about__title text-center w-100 pt-3">
+                                <h3>Departures <span id="YearDepartureUI">2023</span></h3>
+                            </div>
                             <form action="#">
                                 <div class="row g-3">
                                       <div class="col-md-3">
@@ -87,7 +88,7 @@
                         </div>
                     </div>
                     <div class="col ">
-                        <div class="about__right px-5 pb-3">
+                        <div class="about__right pb-3 mt-4">
                             <form action="#">
                                 <div class="row justify-content-center">
                                     <div class="col-8">
