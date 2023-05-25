@@ -17,7 +17,10 @@ const mix = require('laravel-mix');
     'resources/css/all.min.css',
     'resources/css/swiper.min.css',
     'resources/css/lightcase.css',
-    'resources/css/style.css'
+    'resources/css/style.css',
+    'resources/css/green.css',
+    // "resources/plugins/assets/plugins/DataTables/media/css/dataTables.bootstrap.min.css",
+    "resources/plugins/assets/plugins/DataTables/media/css/jquery.dataTables.css"
 ];
 
 const jst = [
@@ -32,7 +35,9 @@ const jst = [
 	'resources/js/waypoints.min.js',
 	'resources/js/vendor/bootstrap.bundle.min.js',
 	'resources/js/plugins.js',
-	'resources/js/main.js'
+	'resources/js/main.js',
+    "resources/plugins/assets/plugins/DataTables/media/js/jquery.dataTables.js",
+    "resources/plugins/assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js"
 ];
 
 mix.js('resources/js/app.js', 'public/js')
@@ -44,15 +49,21 @@ mix.js('resources/js/app.js', 'public/js')
 
     .scripts(['resources/js/onepage.js'],"public/js/onepage.js")
 
-    .scripts(['public/js/app.js','resources/js/biodata/biodata.js']
-        ,"public/js/biodata/biodata.js")
-    .scripts('resources/js/admin/ManagementRegistration.js','public/js/admin/ManagementRegistration.js')
+    .scripts(['public/js/app.js','resources/js/biodata/biodata.js'],"public/js/biodata/biodata.js")
+
+    //managementregistration
+    .scripts([
+        "public/js/app.js",
+        'resources/js/admin/ManagementRegistration.js'
+    ],'public/js/admin/ManagementRegistration.js')
+
     .scripts('resources/js/admin/MasterMaintenance.js','public/js/admin/MasterMaintenance.js')
 
-    .styles(["public/css/app.css"],'public/css/admin/Admin.css')
+    .styles(["public/css/app.css",],'public/css/admin/Admin.css')
 
     .scripts(["public/js/app.js",
               "resources/js/admin/Admin.js"
+
     ],'public/js/admin/Admin.js')
 
     .styles(["resources/css/Custom/partial/gallery.css"],"public/css/Custom/partial/gallery.css")
