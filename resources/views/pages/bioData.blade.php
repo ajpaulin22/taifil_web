@@ -415,7 +415,7 @@
 									<h6>Date Until</h6>
 								</div>
 								<div class="col-md-12">
-									<h6>Elementary:</h6>
+									<h6>Elementary<span style="color:red">*</span>:</h6>
 								</div>
 								<div class="col-md-1"></div>
 								<div class="col-md-4 text-center">
@@ -431,7 +431,7 @@
 									<input type="date" class="form-control" name="educ_elemetary_to" id="educ_elemetary_to" required>
 								</div>
 								<div class="col-md-12">
-									<h6>High School:</h6>
+									<h6>High School<span style="color:red">*</span>:</h6>
 								</div>
 								<div class="col-md-1"></div>
 								<div class="col-md-4 text-center">
@@ -447,7 +447,7 @@
 									<input type="date" class="form-control" name="educ_high_to" id="educ_high_to" required>
 								</div>
 								<div class="col-md-12">
-									<h6>Vocational:</h6>
+									<h6>Vocational<span style="color:red">*</span>:</h6>
 								</div>
 								<div class="col-md-1"><button class="btn btn-danger btn-block" ><i class="fa-solid fa-plus"></i></button></div>
 								<div class="col-md-4 text-center">
@@ -473,7 +473,7 @@
 									<input type="date" class="form-control" name="educ_voc_certvalid1" id="educ_voc_certvalid1" required>
 								</div>
 								<div class="col-md-12">
-									<h6>Japanese Language:</h6>
+									<h6>Japanese Language<span style="color:red">*</span>:</h6>
 								</div>
 								<div class="col-md-1"></div>
 								<div class="col-md-4 text-center">
@@ -496,7 +496,7 @@
 									<input type="date" class="form-control" name="educ_jpl_certvalid" id="educ_jpl_certvalid" required>
 								</div>
 								<div class="col-md-12">
-									<h6>College:</h6>
+									<h6>College<span style="color:red">*</span>:</h6>
 								</div>
 								<div class="col-md-1"></div>
 								<div class="col-md-4 text-center">
@@ -527,19 +527,19 @@
 						<div class="m-4">
 							<div class="row mt-2">
 								<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 align text-center">
-									<h6>Name of Company</h6>
+									<h6>Name of Company<span style="color:red">*</span></h6>
 								</div>
 								<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 text-center">
-									<h6>Position</h6>
+									<h6>Position<span style="color:red">*</span></h6>
 								</div>
 								<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 text-center">
-									<h6>Company Address</h6>
+									<h6>Company Address<span style="color:red">*</span></h6>
 								</div>
 								<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 text-center">
-									<h6>Date From</h6>
+									<h6>Date From<span style="color:red">*</span></h6>
 								</div>
 								<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 text-center">
-									<h6>Date Until</h6>
+									<h6>Date Until<span style="color:red">*</span></h6>
 								</div>
 
 							</div>
@@ -560,25 +560,29 @@
 								</div>
 							</form>
 							<button class="btn btn-success mt-1" id="Addbtn_Employment_Local">Add Record</button>
+							<div class="form-check form-check-inline mx-5">
+								<input class="form-check-input" type="checkbox" id="personal_japlang_writing" value="writing">
+								<label class="form-check-label" for="personal_japlang_writing">Not Applicable</label>
+							</div>
 						</div>
 					</div>
 					<div class="tab-pane fade" id="EmploymentRecord_Abroad">
 						<div class="m-4">
                             <div class="row mt-2">
 								<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 align text-center">
-									<h6>Name of Company</h6>
+									<h6>Name of Company<span style="color:red">*</span></h6>
 								</div>
 								<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 text-center">
-									<h6>Position</h6>
+									<h6>Position<span style="color:red">*</span></h6>
 								</div>
 								<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 text-center">
-									<h6>Company Address</h6>
+									<h6>Company Address<span style="color:red">*</span></h6>
 								</div>
 								<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 text-center">
-									<h6>Date From</h6>
+									<h6>Date From<span style="color:red">*</span></h6>
 								</div>
 								<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 text-center">
-									<h6>Date Until</h6>
+									<h6>Date Until<span style="color:red">*</span></h6>
 								</div>
 							</div>
 							<form class="row g-3" novalidate id="EmploymentRecord_abroad_form">
@@ -598,6 +602,10 @@
 								</div>
 							</form>
 							<button class="btn btn-success mt-1" id="Addbtn_Employment_abroad">Add Record</button>
+							<div class="form-check form-check-inline mx-5">
+								<input class="form-check-input" type="checkbox" id="personal_japlang_writing" value="writing">
+								<label class="form-check-label" for="personal_japlang_writing">Not Applicable</label>
+							</div>
 						</div>
 					</div>
 					<div class="tab-pane fade" id="FamilyInformation">
@@ -709,7 +717,7 @@
 								  Please provide address
 								</div>
 							</div>
-							<button class="btn btn-success ">Add Siblings</button>
+							<button class="btn btn-success w-25 ">Add Siblings</button>
 							<h4>Spouse:</h4>
 							<div class="col-md-3">
 								<label for="family_spouse_name1" class="form-label">Name</label>
@@ -978,7 +986,7 @@
 									<input type="text" class="form-control form-control-sm" id="PDLast_Name" name="PDLast_Name" placeholder="Address" autocomplete="off">
 								</div>
 							</div>
-							<button class="btn btn-success" id="addAcquantances" style="margin-top: 1rem;">Add Record</button>
+							<button class="btn btn-success w-25" id="addAcquantances" style="margin-top: 1rem;">Add Record</button>
 						</form>
 					</div>
 					<div class="tab-pane fade" id="Upload">
@@ -1000,7 +1008,7 @@
 							</div>
 						</form>
 					</div>
-					<a href="#EmploymentRecord_Local" class="btn btn-secondary offset-11" id="addAcquantances" style="margin-top: 1rem;">SAVE</a>	
+					<a href="#EmploymentRecord_Local" class="btn btn-secondary offset-11 " id="addAcquantances" style="margin-top: 1rem;">SAVE</a>	
 				</div>
 			</div>
 			

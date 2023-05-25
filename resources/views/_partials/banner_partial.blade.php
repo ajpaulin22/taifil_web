@@ -1,26 +1,43 @@
 
-<div class="banner banner--style2 padding-top bg_img" style="background-image: url({{url('/images/banner/bg-2.jpg')}});">
-    <div class="container">
-        <div class="banner__wrapper">
+<div class="banner banner--style2 bg_img">
             <div class="row g-0 justify-content-center">
-                <div class="col-lg-4 col-12">
-                    <div class="banner__content wow fadeInLeft" data-wow-duration="1.5s">
-                        <div class="banner__title">
-                            <h2 style="text-shadow: 1px 1px #3a3a3a;font-family: Gil sans MT Condensed">Tai-Fil Manpower Services Corp.</h2>
-                            <p>Join our international family today! Please call us for more info.</p>
-                            {{-- <a href="BiodataForm.html" class="default-btn style-2" style="background-color: #53AA71;"><span>Apply Now!</span></a> --}}
-
-                    
-
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" style="height: 830px" data-bs-interval="3000">
+                        <img src="{{url('/images/Pictures/helping_elder.jpg')}}" class="d-block h-100 w-100" alt="" style="height: 100%;object-fit:cover;filter:brightness(0.5)">
+                        <div class="carousel-caption top-0 mt-5" style="text-shadow: 5px 2px #000000;">
+                            <h1 class="display-1 fw-bolder text-capitalize text-white" >Tai-Fil Manpower Services Corp.</h1>
+                            <p class="fs-5 text-uppercase">Join our international family today! Please call us for more info.</p>
                         </div>
+                      </div>
+                      <div class="carousel-item" style="height: 830px" data-bs-interval="3000">
+                        <img src="{{url('/images/Pictures/mechanical.jpg')}}" class="d-block h-100 w-100" alt="" style="height: 100%;object-fit:cover;filter:brightness(0.5)">
+                        <div class="carousel-caption top-0 mt-5" style="text-shadow: 5px 2px #000000;">
+                            <h1 class="display-1 fw-bolder text-capitalize text-white ">Tai-Fil Manpower Services Corp.</h1>
+                            <p class="fs-5 text-uppercase">Join our international family today! Please call us for more info.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" style="height: 830px" data-bs-interval="3000">
+                        <img src="{{url('/images/Pictures/painting.jpg')}}" class="d-block h-100 w-100" alt="" style="height: 100%;object-fit:cover;filter:brightness(0.5)">
+                        <div class="carousel-caption top-0 mt-5" style="text-shadow: 5px 2px #000000;">
+                            <h1 class="display-1 fw-bolder text-capitalize text-white">Tai-Fil Manpower Services Corp.</h1>
+                            <p class="fs-5 text-uppercase">Join our international family today! Please call us for more info.</p>
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <div class="col-lg-8 col-12">
-                    <div class="banner__thumb wow fadeInUp" data-wow-duration="1.5s">
-                        <img src="{{url('images/banner/02.png')}}" alt="banner" style="height: 580px">
-                    </div>
-                </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </div>
-        </div>
-    </div>
 </div>
