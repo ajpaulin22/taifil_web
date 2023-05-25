@@ -1694,7 +1694,8 @@ iframe {
 }
 .header__bottom {
   padding-block: 5px;
-  background-image: linear-gradient(to right top, #009572, #1d9972, #2d9d72, #3aa171, #45a571, #46a671, #48a770, #49a870, #40a670, #37a470, #2ba270, #1ca070) !important;
+  /* background-image: linear-gradient(to right top, #009572, #1d9972, #2d9d72, #3aa171, #45a571, #46a671, #48a770, #49a870, #40a670, #37a470, #2ba270, #1ca070) !important; */
+  background-color: white;
 }
 .header.header-fixed .header__top {
   display: none !important;
@@ -1851,7 +1852,7 @@ iframe {
   color: #00120e;
 }
 .mainmenu ul li a {
-  color: #FFFFFF;
+  color: #357960;
   padding: 10px 25px !important;
 }
 @media (max-width: 991px) {

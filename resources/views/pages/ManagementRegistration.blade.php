@@ -1,11 +1,22 @@
 
 @push('style')
-    <link rel="stylesheet" href="{{asset('css/ManagementRegistration.css')}}">
+    <link rel="stylesheet" href="{{asset('css/admin/ManagementRegistration.css')}}">
 @endpush
 
 @extends('layout.layout')
 
 @section('content')
+<style>
+    .form-control{
+        display: inline;
+    }
+    .header{
+        text-align:center;
+        padding-bottom:25px !important;
+        
+    }
+
+</style>
 <div class="panel panel-inverse" id="main-panel" style="margin: auto; margin-top: 10px; width: 95%; font-size: 14px;" >
     <div class="panel-heading">
         <h4 class="panel-title"><span class="fa fa-user"></span>Management Registration</h4>
@@ -46,6 +57,7 @@
                 </div>
             </div>
         </div>
+        <div>
         <div class="row">
             <div class="col-sm-1 mb-2">
                 <button type="button" id="btnFilter" class="btn btn-sm btn-info btn-block" style="width: 100px;"><span class="fa fa-filter"></span><span class="btnLabel">Filter</span></button>
@@ -63,76 +75,34 @@
             </div>
         </div>
         <div class="table-responsive xs">
-            <table class="table table-bordered tbl-100p" data-adjust="-30" id="tblHeadCount">
-                <thead>
+            <table class="table table-striped table-bordered tbl-100p display" style='border: 1px solid grey' data-adjust="-30" id="tblManagementRegistration">
+                <thead style='border: 1px solid black;'>
                     <tr>
-                        <th rowspan="2" style="width: 2%;"><input type="checkbox" id="chkAll"></th>
-                        <th rowspan="2" style="width: 7%;">ID</th>
-                        <th rowspan="2" style="width: 20%;">Name</th>
-                        <th rowspan="2" style="width: 20%;">Job Categories</th>
-                        <th colspan="3" style="width: 20%; text-align:center;">Interview History</th>
-                        <th rowspan="2" style="width: 4%;">Age</th>
-                        <th rowspan="2" style="width: 7%;">Sent To Abroad</th>
+                        <th rowspan="2" class='header' style='padding-bottom:25px;'></th>
+                        <th rowspan="2" class='header' style='margin:auto;text-align:center;'>ID</th>
+                        <th rowspan="2" class='header'>Name</th>
+                        <th rowspan="2" class='header'>Job Categories</th>
+                        <th colspan="3" style='text-align: center;'>Interview History</th>
+                        <th rowspan="2" class='header'>Age</th>
+                        <th rowspan="2" class='header'>Sent To Abroad</th>
                     </tr>
                     <tr>
-                        <th>Show/No Show</th>
-                        <th>InterviewDate</th>
-                        <th>Company</th>
+                        <th style='text-align:center'>Show/No Show</th>
+                        <th style='text-align:center'>InterviewDate</th>
+                        <th style='text-align:center'>Company</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td name="checkbox"></td>
-                        <td name="ID"></td>
-                        <td name="Name"><input class="form-control" type="text"></td>
-                        <td name="JobCategories"><input class="form-control" type="text"></td>
-                        <td name="Show"></td>
+                        <td name="checkbox"><input type="checkbox"></td>
+                        <td name="ID" style='text-align: center;'></td>
+                        <td name="Name"></td>
+                        <td name="JobCategories"></td>
+                        <td name=Show></td>
                         <td name="InterviewDate"></td>
-                        <td name="Company"><input class="form-control" type="text"></td>
+                        <td name="Company"></td>
                         <td name="Age"></td>
                         <td name="ToAbroad"></td>
-                    </tr>
-                    <tr>
-                        <td name="checkbox"><input type="checkbox"></td>
-                        <td name="ID">1</td>
-                        <td name="Name">Jenefer Raquin</td>
-                        <td name="JobCategories">Cultivate Agriculture</td>
-                        <td name=Show>
-                            <select class="form-control">
-                                <option value="0">No</option>
-                                <option value="1">Yes</option>
-                            </select>
-                        </td>
-                        <td name="InterviewDate"><input class="form-control" type="text"></td>
-                        <td name="Company"><input class="form-control" type="text"></td>
-                        <td name="Age">20</td>
-                        <td name="ToAbroad">
-                            <select class="form-control">
-                                <option value="0">No</option>
-                                <option value="1">Yes</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>2</td>
-                        <td>Lenard Robenta</td>
-                        <td>Cultivate Agriculture</td>
-                        <td name=Show>
-                            <select class="form-control" id="Show">
-                                <option value="0">No</option>
-                                <option value="1">Yes</option>
-                            </select>
-                        </td>
-                        <td name="InterviewDate"><input class="form-control" type="text"></td>
-                        <td name="Company"><input class="form-control" type="text"></td>
-                        <td>45</td>
-                        <td>
-                            <select class="form-control">
-                                <option value="0">No</option>
-                                <option value="1">Yes</option>
-                            </select>
-                        </td>
                     </tr>
                 </tbody>
             </table>
