@@ -560,7 +560,7 @@
 								</div>
 							</form>
 							<button class="btn btn-success mt-1" id="Addbtn_Employment_Local">Add Record</button>
-							<div class="form-check form-check-inline mx-5">
+							<div class="form-check form-check-inline mx-5 mt-2">
 								<input class="form-check-input" type="checkbox" id="personal_japlang_writing" value="writing">
 								<label class="form-check-label" for="personal_japlang_writing">Not Applicable</label>
 							</div>
@@ -602,7 +602,7 @@
 								</div>
 							</form>
 							<button class="btn btn-success mt-1" id="Addbtn_Employment_abroad">Add Record</button>
-							<div class="form-check form-check-inline mx-5">
+							<div class="form-check form-check-inline mx-5 mt-2">
 								<input class="form-check-input" type="checkbox" id="personal_japlang_writing" value="writing">
 								<label class="form-check-label" for="personal_japlang_writing">Not Applicable</label>
 							</div>
@@ -808,108 +808,108 @@
 											<span class="">Have you been to japan? (nakapunta ka na ba sa Japan):</span>
 										</div>
 										<div class="form-check form-check-inline">
-											<input class="form-check-input" type="radio" name="japanRad" id="japanRad0" value="option1">
+											<input class="form-check-input" type="radio" name="japanRad" onclick="hidejapan(this)" id="japanRad0" value="1">
 											<label class="form-check-label" for="japanRad0">YES</label>
 										  </div>
 										  <div class="form-check form-check-inline">
-											<input class="form-check-input" type="radio" name="japanRad" id="japanRad1" value="option2">
+											<input class="form-check-input" type="radio" name="japanRad" onclick="hidejapan(this)" id="japanRad1" value="0">
 											<label class="form-check-label" for="japanRad1">NO</label>
 										  </div>
 									</div>
 								</div>
 							</div>
-							<div id="JapanQA">
+							<div id="japanQA" hidden>
+								<div>
+									<div class="row">
+										<div class="col-auto">
+										  <label for="inputPassword6" class="col-form-label">How many times? (ilang beses?)</label>
+										</div>
+										<div class="col-auto">
+										  <input type="number" id="inputPassword6" class="" style="border-bottom: 1px solid black;padding-bottom: 0;">
+										</div>
+								</div>
 								<div class="row">
 									<div class="col-auto">
-									  <label for="inputPassword6" class="col-form-label">How many times? (ilang beses?)</label>
+									  <label for="inputPassword6" class="col-form-label">When(kung oo,Kailan) write all (isulat lahat)</label>
+									</div>
+									<div class="col-6">
+									  <input type="text" id="inputPassword6" class="" style="border-bottom: 1px solid black;padding-bottom: 0;">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-auto">
+									  <label for="inputPassword6" class="col-form-label">Where in Japan</label>
 									</div>
 									<div class="col-auto">
-									  <input type="number" id="inputPassword6" class="" style="border-bottom: 1px solid black;padding-bottom: 0;">
-									</div>
-							</div>
-							<div class="row">
-								<div class="col-auto">
-								  <label for="inputPassword6" class="col-form-label">When(kung oo,Kailan) write all (isulat lahat)</label>
-								</div>
-								<div class="col-6">
-								  <input type="text" id="inputPassword6" class="" style="border-bottom: 1px solid black;padding-bottom: 0;">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-auto">
-								  <label for="inputPassword6" class="col-form-label">Where in Japan</label>
-								</div>
-								<div class="col-auto">
-								  <input type="text" id="inputPassword6" class="" style="border-bottom: 1px solid black;padding-bottom: 0;">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-6 row">
-									<div class="row">
-										<div class="col-auto">
-											<label for="inputPassword6" class="col-form-label">Have you overstayed in Japan?</label>
-										  </div>
-										  <div class="col-auto">
-											  <div class="form-check form-check-inline">
-												  <input class="form-check-input" type="radio" name="overstayRad" id="overstayRad0" value="option1">
-												  <label class="form-check-label" for="overstayRad0">YES</label>
-												</div>
-												<div class="form-check form-check-inline">
-												  <input class="form-check-input" type="radio" name="overstayRad" id="overstayRad1" value="option2">
-												  <label class="form-check-label" for="overstayRad1">NO</label>
-												</div>
-										  </div>
-									</div>
-									<div class="row" id="overstayed">
-										<div class="col-auto">
-											<label for="inputPassword6" class="col-form-label">if Yes, How long?</label>
-										  </div>
-										  <div class="col-auto">
-											<input type="text" id="inputPassword6" class="" style="border-bottom: 1px solid black;padding-bottom: 0;">
-										  </div>
-										<div class="col-auto">
-											<label for="inputPassword6" class="col-form-label">Did you surrendered?</label>
-										  </div>
-										  <div class="col-auto">
-											  <div class="form-check form-check-inline">
-												  <input class="form-check-input" type="radio" name="surrenderRad" id="surrenderRad0" value="option1">
-												  <label class="form-check-label" for="surrenderRad0">YES</label>
-												</div>
-												<div class="form-check form-check-inline">
-												  <input class="form-check-input" type="radio" name="surrenderRad" id="surrenderRad1" value="option2">
-												  <label class="form-check-label" for="surrenderRad1">NO</label>
-												</div>
-										  </div>
+									  <input type="text" id="inputPassword6" class="" style="border-bottom: 1px solid black;padding-bottom: 0;">
 									</div>
 								</div>
-								<div class="col-6 row">
-									<div class="row">
-										<div class="col-auto">
-											<label for="inputPassword6" class="col-form-label">Did you use fake identity when you went to Japan?</label>
-										  </div>
-										  <div class="col-auto">
-											  <div class="form-check form-check-inline">
-												  <input class="form-check-input" type="radio" name="IdentityRad" id="IdentityRad0" value="option1">
-												  <label class="form-check-label" for="IdentityRad0">YES</label>
-												</div>
-												<div class="form-check form-check-inline">
-												  <input class="form-check-input" type="radio" name="IdentityRad" id="IdentityRad1" value="option2">
-												  <label class="form-check-label" for="IdentityRad1">NO</label>
-												</div>
-										  </div>
+								<div class="row">
+									<div class="col-6 row">
+										<div class="row">
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">Have you overstayed in Japan?</label>
+											  </div>
+											  <div class="col-auto">
+												  <div class="form-check form-check-inline">
+													  <input class="form-check-input" type="radio" name="overstayRad" id="overstayRad0" value="option1">
+													  <label class="form-check-label" for="overstayRad0">YES</label>
+													</div>
+													<div class="form-check form-check-inline">
+													  <input class="form-check-input" type="radio" name="overstayRad" id="overstayRad1" value="option2">
+													  <label class="form-check-label" for="overstayRad1">NO</label>
+													</div>
+											  </div>
+										</div>
+										<div class="row" id="overstayed">
+											<div class="col-4">
+												<label for="inputPassword6" class="col-form-label">if Yes, How long?</label>
+											  </div>
+											  <div class="col-8">
+												<input type="text" id="inputPassword6" class="" style="border-bottom: 1px solid black;padding-bottom: 0;">
+											  </div>
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">Did you surrendered?</label>
+											  </div>
+											  <div class="col-auto">
+												  <div class="form-check form-check-inline">
+													  <input class="form-check-input" type="radio" name="surrenderRad" id="surrenderRad0" value="option1">
+													  <label class="form-check-label" for="surrenderRad0">YES</label>
+													</div>
+													<div class="form-check form-check-inline">
+													  <input class="form-check-input" type="radio" name="surrenderRad" id="surrenderRad1" value="option2">
+													  <label class="form-check-label" for="surrenderRad1">NO</label>
+													</div>
+											  </div>
+										</div>
 									</div>
-									<div class="row" id="fakeIdentity">
-										<div class="col-auto">
-											<label for="inputPassword6" class="col-form-label">if Yes, where did you use the name for?</label>
-										  </div>
-										  <div class="col-auto">
-											<input type="text" id="inputPassword6" class="" style="border-bottom: 1px solid black;padding-bottom: 0;">
-										  </div>
+									<div class="col-6 row">
+										<div class="row">
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">Did you use fake identity when you went to Japan?</label>
+											  </div>
+											  <div class="col-auto">
+												  <div class="form-check form-check-inline">
+													  <input class="form-check-input" type="radio" name="IdentityRad" id="IdentityRad0" value="option1">
+													  <label class="form-check-label" for="IdentityRad0">YES</label>
+													</div>
+													<div class="form-check form-check-inline">
+													  <input class="form-check-input" type="radio" name="IdentityRad" id="IdentityRad1" value="option2">
+													  <label class="form-check-label" for="IdentityRad1">NO</label>
+													</div>
+											  </div>
+										</div>
+										<div class="row" id="fakeIdentity">
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">if Yes, where did you use the name for?</label>
+											  </div>
+											  <div class="col-auto">
+												<input type="text" id="inputPassword6" class="" style="border-bottom: 1px solid black;padding-bottom: 0;">
+											  </div>
+										</div>
 									</div>
 								</div>
-								
-								
-							</div>
+								</div>
 							</div>
 							<div class="row">
 								<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
@@ -918,17 +918,17 @@
 											<span class="">Have you applied for a japanese visa before?</span>
 										</div>
 										<div class="form-check form-check-inline">
-											<input class="form-check-input" type="radio" name="visaRad" id="visaRad0" value="option1">
+											<input class="form-check-input" type="radio" name="visaRad" onclick="hidevisa(this)"  id="visaRad0" value="1">
 											<label class="form-check-label" for="visaRad0">YES</label>
 										  </div>
 										  <div class="form-check form-check-inline">
-											<input class="form-check-input" type="radio" name="visaRad" id="visaRad1" value="option2">
+											<input class="form-check-input" type="radio" name="visaRad" onclick="hidevisa(this)"  id="visaRad1" value="0">
 											<label class="form-check-label" for="visaRad1">NO</label>
 										  </div>
 									</div>
 								</div>
 							</div>
-							<div id="visaQA">
+							<div id="visaQA" hidden>
 								<div class="row">
 									<div class="col-auto">
 									  <label for="inputPassword6" class="col-form-label">Type of Visa</label>
@@ -992,16 +992,19 @@
 					<div class="tab-pane fade" id="Upload">
 						<form class="row g-3 mt-2" novalidate>
 							<div class="col-md-4">
+								<h5>1x1 Picture</h5>
 								<div class="image-area mt-4"><img id="imageResult1" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
 								<input type="file" class="form-control" onchange="readURL(this,1);"  aria-label="file example" required>
 								<div class="invalid-feedback">Example invalid form file feedback</div>
 							</div>
 							<div class="col-md-4">
+								<h5>Government ID Picture</h5>
 								<div class="image-area mt-4"><img id="imageResult2" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
 								<input type="file" class="form-control" onchange="readURL(this,2);" aria-label="file example" required>
 								<div class="invalid-feedback">Example invalid form file feedback</div>
 							</div>
 							<div class="col-md-4">
+								<h5>Valid ID Picture</h5>
 								<div class="image-area mt-4"><img id="imageResult3" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
 								<input type="file" class="form-control" onchange="readURL(this,3);" aria-label="file example" required>
 								<div class="invalid-feedback">Example invalid form file feedback</div>
