@@ -1,7 +1,7 @@
-<div class="about padding-top padding-bottom" id="TITP_section" >
+<div class="about" id="TITP_section" >
     <div class="container">
         <div class="section__header style-2 text-center wow fadeInUp" data-wow-duration="1.5s" style="color: rgb(0, 0, 0);">
-            <h2 style="color: rgb(0, 0, 0);"><hr>TITP<hr></h2>
+            <h2 ><hr>TITP<hr></h2>
             <br>
             <div>
                 <h4>What is Technical Intern Training Program (TITP)?</h4>

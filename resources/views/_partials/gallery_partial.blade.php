@@ -32,7 +32,7 @@
                   <span class="visually-hidden">Next</span>
                 </button>
             </div>
-              
+
             <div class="row mt-5">
                 
                 <div class="blog-post-item col-md-3 col-sm-3">

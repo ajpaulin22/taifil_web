@@ -1,7 +1,7 @@
-<div class="about padding-top padding-bottom" id="SSW_section" style="background-image: linear-gradient(to right top, #009572, #1d9972, #2d9d72, #3aa171, #45a571, #46a671, #48a770, #49a870, #40a670, #37a470, #2ba270, #1ca070);">
+<div class="about" id="SSW_section" style="background-color:white;">
     <div class="">
-        <div class="section__header style-2 wow fadeInUp text-white" data-wow-duration="1.5s" >
-            <h2 class="text-center"><hr>SSW<hr></h2>
+        <div class="section__header style-2 wow fadeInUp" style='font-color:#357960' data-wow-duration="1.5s" >
+            <h2 class="text-center" ><hr>SSW<hr></h2>
             <div>
                 <h6 class="text-center">What is Specified Skilled Worker Program (SSW)?</h6>
                 <p >Specified Skilled Worker is a status of residence created to give foreign nationals more opportunities to work in Japan. There are two types of Specified Skilled Worker status of residence: type (i) and type (ii). The type (ii) status of residence requires more specialized skills than type (i). Source - www.ssw.go.jp</p>

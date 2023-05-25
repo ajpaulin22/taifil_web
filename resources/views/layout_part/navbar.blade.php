@@ -23,7 +23,7 @@
 @endpush
 
 <header class="header" id="navbar" >
-    <div class="header__bottom" style="background-image: linear-gradient(to right top, #009572, #1d9972, #2d9d72, #3aa171, #45a571, #46a671, #48a770, #49a870, #40a670, #37a470, #2ba270, #1ca070);">
+    <div class="header__bottom" style="background-color:white;">
         <div class="container" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
             <nav class="navbar navbar-expand-lg">
                 <div class="row">
@@ -31,7 +31,7 @@
                         <a class="navbar-brand" href="/home#"><img src="/images/logo/logo.jpg" alt="logo"></a>
                     </div>
                     <div class="col-auto p-0">
-                        <p class="mb-0 text-white font-weight-bold" >Tai-Fil <br> Manpower <br> Services Corp.</p>
+                        <p class="mb-0 font-weight-bold" style='font-color:#357960' >Tai-Fil <br> Manpower <br> Services Corp.</p>
                     </div>
                 </div>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
