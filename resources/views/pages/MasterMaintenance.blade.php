@@ -32,35 +32,10 @@
                 </div>
                 <div class="row">
                     <div class="table-responsive xs">
-                        <table class="table table-bordered tbl-100p" data-adjust="-30" id="tblHeadCount">
-                            <thead>
-                                <tr >
-                                    <th style="width: 2%;"><input type="checkbox" id="chkAll"></th>
-                                    <th style="width: 8%;">ID</th>
-                                    <th style="width: 90%;">Code</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr >
-                                    <td></td>
-                                    <td></td>
-                                    <td><input class="form-control" type="text"></td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>1</td>
-                                    <td>Agriculture</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>2</td>
-                                    <td>IT</td>
-                                </tr>
-                            </tbody>
+                        <table class="table table-striped table-bordered tbl-100p" data-adjust="-30" id="tblCodes">
                         </table>
                     </div>
                 </div>
-                
             </div>
             
             <div class="col-sm-4">
@@ -77,31 +52,7 @@
                 </div>
                 <div class="row">
                     <div class="table-responsive xs">
-                        <table class="table table-bordered tbl-100p" data-adjust="-30" id="tblHeadCount">
-                            <thead>
-                                <tr >
-                                    <th style="width: 2%;"><input type="checkbox" id="chkAll"></th>
-                                    <th style="width: 8%;">ID</th>
-                                    <th style="width: 90%;">Job Categories</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr >
-                                    <td></td>
-                                    <td></td>
-                                    <td><input class="form-control" type="text"></td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>1</td>
-                                    <td>Agriculture</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>2</td>
-                                    <td>IT</td>
-                                </tr>
-                            </tbody>
+                        <table class="table table-bordered tbl-100p" data-adjust="-30" id="tblJobCategories">
                         </table>
                     </div>
                 </div>
@@ -121,7 +72,7 @@
                 </div>
                 <div class="row">
                     <div class="table-responsive xs">
-                        <table class="table table-bordered tbl-100p" data-adjust="-30" id="tblHeadCount">
+                        <table class="table table-bordered tbl-100p" data-adjust="-30" id="tblOperations">
                             <thead>
                                 <tr >
                                     <th style="width: 2%;"><input type="checkbox" id="chkAll"></th>
@@ -158,5 +109,5 @@
 @endsection
 
 @push('scripts')
-    <script src="{{asset('/js/MasterMaintenance.js')}}"></script>
+    <script src="{{asset('/js/admin/MasterMaintenance.js')}}"></script>
 @endpush

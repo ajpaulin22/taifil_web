@@ -18226,7 +18226,6 @@ $.fn.dataTable.ext.order['dom-text'] = function  ( settings, col )
 (function(){
     var tblManagementRegistration = "";
     var data = [
-        
         {IDcheckbox: 1, IDrow: 1, Name: "Jenefer", JobCategories: "Livestock Agriculture", Program: "SSW", Show: 2, InterviewDate: "2023-01-01", Company: "Seiko IT Solutions Philippines Inc.", Age: 23, ToAbroad: 1},
         {IDcheckbox: 2, IDrow: 2, Name: "Lenard", JobCategories: "Cultivate Agriculture", Program: "TITP", Show: 1, InterviewDate: "2023-01-02", Company: "Umbrella Corporation", Age: 25, ToAbroad: 0},
         {IDcheckbox: 3, IDrow: 3, Name: "Alphy", JobCategories: "Livestock Agriculture", Program: "Direct", Show: 2, InterviewDate: "2023-01-03", Company: "Seiko", Age: 26, ToAbroad: 1},
@@ -18237,12 +18236,10 @@ $.fn.dataTable.ext.order['dom-text'] = function  ( settings, col )
         $(".carousel").carousel({
             interval: 2000
         });
-
         $("#Code").change(function(){
             GetJobCategories();
             $("#Operations").html("");
         });
-
         $("#JobCategories").change(function(){
             GetOperations();
         })
@@ -18491,8 +18488,9 @@ $.fn.dataTable.ext.order['dom-text'] = function  ( settings, col )
             order: [[1, "asc"]],
             "columnDefs": [
                 {
-                    "targets": 5,
-                    "orderDataType": "dom-input"
+                    
+                    "orderDataType": "dom-text",
+                    "targets": [5,6]
                  }
             ],
             "initComplete": function () {

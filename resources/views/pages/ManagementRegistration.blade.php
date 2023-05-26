@@ -21,7 +21,6 @@
         width:25%;
         margin-bottom:5px;
     }
-
 </style>
 <div class="panel panel-inverse" id="main-panel" style="margin: auto; margin-top: 10px; margin-bottom:250px; width: 95%; font-size: 14px;" >
     <div class="panel-heading">

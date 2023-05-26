@@ -5210,8 +5210,11 @@ iframe {
   color: #00120e;
 }
 .mainmenu ul li a {
-  color: #357960;
+  color: #000000;
   padding: 10px 25px !important;
+}
+.mainmenu ul li a:hover{
+  color: #83B348;
 }
 @media (max-width: 991px) {
   .mainmenu ul li a {

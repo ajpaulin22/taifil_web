@@ -58,7 +58,10 @@ mix.js('resources/js/app.js', 'public/js')
         'resources/js/admin/ManagementRegistration.js'
     ],'public/js/admin/ManagementRegistration.js')
 
-    .scripts('resources/js/admin/MasterMaintenance.js','public/js/admin/MasterMaintenance.js')
+    .scripts([
+        "public/js/app.js",
+        'resources/js/admin/MasterMaintenance.js'
+    ],'public/js/admin/MasterMaintenance.js')
 
     .styles(["public/css/app.css",],'public/css/admin/Admin.css')
 
