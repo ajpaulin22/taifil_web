@@ -95,7 +95,7 @@
                                 <div class="form-group row">
                                             <div class="input-group mb-3 px-5" >
                                                 <span class="input-group-text">2023</span>
-                                                <input type="text" class="form-control text-end" name="dep_aug" id="dep_aug" value="60" readonly/>
+                                                <input type="text" class="form-control text-end" name="dep_aug" id="dep_aug" value="87" readonly/>
                                             </div>
                                             <div class="input-group mb-3 px-5" >
                                                 <span class="input-group-text">2024</span>

@@ -5210,8 +5210,11 @@ iframe {
   color: #00120e;
 }
 .mainmenu ul li a {
-  color: #357960;
+  color: #000000;
   padding: 10px 25px !important;
+}
+.mainmenu ul li a:hover{
+  color: #83B348;
 }
 @media (max-width: 991px) {
   .mainmenu ul li a {
@@ -9927,15 +9930,15 @@ Website: http://www.seantheme.com/color-admin-v4.3/admin/
 
 /*Custom Styles*/
 .table {
-    border: 1.5px solid #71cd91 !important;
+    border: 1.5px solid #144c28d4 !important;
 }
 
 .ht_clone_left.handsontable table, .ht_clone_top_left_corner.handsontable table {
-    border-right: 2px solid #71cd91 !important;
+    border-right: 2px solid #144c28d4 !important;
 }
 
 .table thead th, .table > thead, .handsontable th, .popover *:not(.arrow), .sw-main > ul.step-anchor.nav-tabs > li.active > a, .sw-main .sw-toolbar .sw-btn-next, .sw-main .sw-toolbar .sw-btn-next.disabled, .sw-main .sw-toolbar .sw-btn-next.disabled:focus, .sw-main .sw-toolbar .sw-btn-next.disabled:hover, .sw-main > ul.step-anchor.nav-tabs > li.active > a {
-    background: #71cd91 !important;
+    background: #144c28d4;
     color: #fff !important;
     border: none !important;
 }
@@ -9949,15 +9952,15 @@ Website: http://www.seantheme.com/color-admin-v4.3/admin/
     }
 
 .table.table-bordered > thead:first-child > tr:first-child > th {
-    border-top: 1px solid #71cd91;
+    border-top: 1px solid #144c28d4;
 }
 
 .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > th {
-    border-color: #71cd91;
+    border-color: #144c28d4;
 }
 
 .table thead th, .table > thead > tr > th {
-    border-bottom: 1px solid #71cd91 !important;
+    border-bottom: 1px solid #144c28d4 !important;
 }
 
 table.dataTable td.sorting_1 {
@@ -10059,6 +10062,7 @@ table.dataTable thead .sorting_desc_disabled {
 }
 table.dataTable thead .sorting {
   background-image: url("../images/sort_both.png");
+  position: relative;
 }
 table.dataTable thead .sorting_asc {
   background-image: url("../images/sort_asc.png");

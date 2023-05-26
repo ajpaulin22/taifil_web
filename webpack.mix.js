@@ -37,7 +37,8 @@ const jst = [
 	'resources/js/plugins.js',
 	'resources/js/main.js',
     "resources/plugins/assets/plugins/DataTables/media/js/jquery.dataTables.js",
-    "resources/plugins/assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js"
+    "resources/plugins/assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js",
+    "resources/plugins/assets/plugins/DataTables/media/js/dom-text.js"
 ];
 
 mix.js('resources/js/app.js', 'public/js')
@@ -57,7 +58,10 @@ mix.js('resources/js/app.js', 'public/js')
         'resources/js/admin/ManagementRegistration.js'
     ],'public/js/admin/ManagementRegistration.js')
 
-    .scripts('resources/js/admin/MasterMaintenance.js','public/js/admin/MasterMaintenance.js')
+    .scripts([
+        "public/js/app.js",
+        'resources/js/admin/MasterMaintenance.js'
+    ],'public/js/admin/MasterMaintenance.js')
 
     .styles(["public/css/app.css",],'public/css/admin/Admin.css')
 

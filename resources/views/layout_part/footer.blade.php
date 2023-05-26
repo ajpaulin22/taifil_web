@@ -43,7 +43,7 @@
           <div class="col-md-3">  
               <h4> Follow Us </h4>  
               <ul class="social-network social-circle">  
-               <li> <a href="#"  title="Facebook"><i class="fab fa-facebook-f fa-lg"></i></a> </li>  
+               <li> <a href="https://www.facebook.com/profile.php?id=100072207240998" target='_blank' title="Facebook"><i class="fab fa-facebook-f fa-lg"></i></a> </li>  
                <li> <a href="#"  title="Linkedin"> <i class="fab fa-linkedin"> </i> </a> </li>  
                <li> <a href="#"> <i class="fab fa-twitter" aria-hidden="true"> </i> </a> </li>  
               </ul>               
@@ -51,4 +51,4 @@
       </div>  
     </div>  
     </div>  
-  </footer>  
+  </footer>
