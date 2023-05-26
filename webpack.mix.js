@@ -37,7 +37,8 @@ const jst = [
 	'resources/js/plugins.js',
 	'resources/js/main.js',
     "resources/plugins/assets/plugins/DataTables/media/js/jquery.dataTables.js",
-    "resources/plugins/assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js"
+    "resources/plugins/assets/plugins/DataTables/media/js/dataTables.bootstrap.min.js",
+    "resources/plugins/assets/plugins/DataTables/media/js/dom-text.js"
 ];
 
 mix.js('resources/js/app.js', 'public/js')

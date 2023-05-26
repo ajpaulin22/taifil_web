@@ -18206,18 +18206,37 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 l=0;for(h=f.length;l<h;l++)if(c=f[l],b.isArray(c))q(d,c);else{g=e="";switch(c){case "ellipsis":e="&#x2026;";g="disabled";break;case "first":e=k.sFirst;g=c+(0<j?"":" disabled");break;case "previous":e=k.sPrevious;g=c+(0<j?"":" disabled");break;case "next":e=k.sNext;g=c+(j<n-1?"":" disabled");break;case "last":e=k.sLast;g=c+(j<n-1?"":" disabled");break;default:e=c+1,g=j===c?"active":""}e&&(i=b("<li>",{"class":t.sPageButton+" "+g,id:0===r&&"string"===typeof c?a.sTableId+"_"+c:null}).append(b("<a>",{href:"#",
 "aria-controls":a.sTableId,"aria-label":u[c],"data-dt-idx":p,tabindex:a.iTabIndex}).html(e)).appendTo(d),a.oApi._fnBindAction(i,{action:c},m),p++)}},i;try{i=b(h).find(d.activeElement).data("dt-idx")}catch(v){}q(b(h).empty().html('<ul class="pagination"/>').children("ul"),s);i!==m&&b(h).find("[data-dt-idx="+i+"]").focus()};return f});
 
+/**
+ * Read information from a column of input (type text) elements and return an
+ * array to use as a basis for sorting.
+ *
+ *  @summary Sorting based on the values of `dt-tag input` elements in a column.
+ *  @name Input element data source
+ *  @requires DataTables 1.10+
+ *  @author [Allan Jardine](http://sprymedia.co.uk)
+ */
+
+$.fn.dataTable.ext.order['dom-text'] = function  ( settings, col )
+{
+	return this.api().column( col, {order:'index'} ).nodes().map( function ( td, i ) {
+		return $('input', td).val();
+	} );
+};
 
 (function(){
     var tblManagementRegistration = "";
     var data = [
-        {IDcheckbox: 1, IDrow: 1, Name: "Lenard", JobCategories: "Cultivate Agriculture", Program: "TITP", Show: 1, InterviewDate: "01/01/2023", Company: "Seiko", Age: 27, ToAbroad: 0}
+        
+        {IDcheckbox: 1, IDrow: 1, Name: "Jenefer", JobCategories: "Livestock Agriculture", Program: "SSW", Show: 2, InterviewDate: "2023-01-01", Company: "Seiko IT Solutions Philippines Inc.", Age: 23, ToAbroad: 1},
+        {IDcheckbox: 2, IDrow: 2, Name: "Lenard", JobCategories: "Cultivate Agriculture", Program: "TITP", Show: 1, InterviewDate: "2023-01-02", Company: "Umbrella Corporation", Age: 25, ToAbroad: 0},
+        {IDcheckbox: 3, IDrow: 3, Name: "Alphy", JobCategories: "Livestock Agriculture", Program: "Direct", Show: 2, InterviewDate: "2023-01-03", Company: "Seiko", Age: 26, ToAbroad: 1},
     ];
 
     $(document).ready(function(){
         drawDataTable();
         $(".carousel").carousel({
             interval: 2000
-        });  
+        });
 
         $("#Code").change(function(){
             GetJobCategories();
@@ -18429,29 +18448,29 @@ l=0;for(h=f.length;l<h;l++)if(c=f[l],b.isArray(c))q(d,c);else{g=e="";switch(c){c
                 { title: 'ID', data: "IDrow", width: "4%", className: "dt-center"},
                 { title: 'Name', data: "Name", width: "18%"},
                 { title: 'JobCategories', data: "JobCategories", width: "17%"},
-                { title: 'Program', data: "Program", width: "5%", className: "dt-center"},
+                { title: 'Program', data: "Program", width: "6%", className: "dt-center"},
                 { 
                     title: 'Show', 
                     render: function (data, row, meta, ){
                         var isSelected = meta.Show == 0 ? 'selected' : '';
                         var isSelected2 = meta.Show == 1 ? 'selected' : '';
-                        return "<select class='form-control show' id='show_"+ meta.IDrow +"' style='width:50%; height:12px; font-size: 11px;'>" +
+                        return "<select class='form-control show' id='show_"+ meta.IDrow +"' style='width:30%; height:12px; font-size: 11px;'>" +
                                 "<option value='0' "+ isSelected +"> No </option>" +
                                 "<option value='1' "+ isSelected2 +"> Yes </option>" +
                                 "</select>";
                     },
-                    width: "5%"
+                    width: "5%", className: "dt-center"
                 },
                 { 
                     title: 'InterviewDate', 
                     render: function(data, row, meta){
-                        return "<input class='form-control inputs_"+ meta.IDrow +"' style='width:50%; height:12px; font-size: 11px;' type='text' value='"+ meta.InterviewDate +"'>"
-                    }, width:"5%"
+                        return "<input class='form-control inputs_"+ meta.IDrow +"' style='width:60%; height:12px; font-size: 11px;' type='date' value='"+ meta.InterviewDate +"'>"
+                    }, width:"5%", className: "dt-center"
                 },
                 { 
                     title: 'Company', 
                     render: function(data, row, meta){
-                        return "<input class='form-control inputs_"+ meta.IDrow +"' style='width:83%; height:12px; font-size: 11px;' type='text' value='"+ meta.Company +"'>"
+                        return "<input class='form-control inputs_"+ meta.IDrow +"' style='width:94%; height:12px; font-size: 11px;' type='text' value='"+ meta.Company +"'>"
                     }, width:"25%"
                 },
                 { title: 'Age', data: "Age", width:"4%", className: "dt-center"},
@@ -18460,16 +18479,22 @@ l=0;for(h=f.length;l<h;l++)if(c=f[l],b.isArray(c))q(d,c);else{g=e="";switch(c){c
                     render: function (data, row, meta, ){
                         var isSelected = meta.ToAbroad == 0 ? 'selected' : '';
                         var isSelected2 = meta.ToAbroad == 1 ? 'selected' : '';
-                        return "<select class='form-control' style='width:50%; height:12px; font-size: 11px;'>" +
+                        return "<select class='form-control' style='width:30%; height:12px; font-size: 11px;'>" +
                                 "<option value='0' "+ isSelected +"> No </option>" +
                                 "<option value='1' "+ isSelected2 +"> Yes </option>" +
                                 "</select>";
                     },
-                    width: "1%"
+                    width: "1%", className: "dt-center"
                 },
             ],
 
             order: [[1, "asc"]],
+            "columnDefs": [
+                {
+                    "targets": 5,
+                    "orderDataType": "dom-input"
+                 }
+            ],
             "initComplete": function () {
                 $("#tblManagementRegistration thead #trSearch").remove();
                 var thead1 = "<tr id='trSearch'>";

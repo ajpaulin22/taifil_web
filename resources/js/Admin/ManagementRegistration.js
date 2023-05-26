@@ -2,14 +2,17 @@
 (function(){
     var tblManagementRegistration = "";
     var data = [
-        {IDcheckbox: 1, IDrow: 1, Name: "Lenard", JobCategories: "Cultivate Agriculture", Program: "TITP", Show: 1, InterviewDate: "01/01/2023", Company: "Seiko", Age: 27, ToAbroad: 0}
+        
+        {IDcheckbox: 1, IDrow: 1, Name: "Jenefer", JobCategories: "Livestock Agriculture", Program: "SSW", Show: 2, InterviewDate: "2023-01-01", Company: "Seiko IT Solutions Philippines Inc.", Age: 23, ToAbroad: 1},
+        {IDcheckbox: 2, IDrow: 2, Name: "Lenard", JobCategories: "Cultivate Agriculture", Program: "TITP", Show: 1, InterviewDate: "2023-01-02", Company: "Umbrella Corporation", Age: 25, ToAbroad: 0},
+        {IDcheckbox: 3, IDrow: 3, Name: "Alphy", JobCategories: "Livestock Agriculture", Program: "Direct", Show: 2, InterviewDate: "2023-01-03", Company: "Seiko", Age: 26, ToAbroad: 1},
     ];
 
     $(document).ready(function(){
         drawDataTable();
         $(".carousel").carousel({
             interval: 2000
-        });  
+        });
 
         $("#Code").change(function(){
             GetJobCategories();
@@ -221,29 +224,29 @@
                 { title: 'ID', data: "IDrow", width: "4%", className: "dt-center"},
                 { title: 'Name', data: "Name", width: "18%"},
                 { title: 'JobCategories', data: "JobCategories", width: "17%"},
-                { title: 'Program', data: "Program", width: "5%", className: "dt-center"},
+                { title: 'Program', data: "Program", width: "6%", className: "dt-center"},
                 { 
                     title: 'Show', 
                     render: function (data, row, meta, ){
                         var isSelected = meta.Show == 0 ? 'selected' : '';
                         var isSelected2 = meta.Show == 1 ? 'selected' : '';
-                        return "<select class='form-control show' id='show_"+ meta.IDrow +"' style='width:50%; height:12px; font-size: 11px;'>" +
+                        return "<select class='form-control show' id='show_"+ meta.IDrow +"' style='width:30%; height:12px; font-size: 11px;'>" +
                                 "<option value='0' "+ isSelected +"> No </option>" +
                                 "<option value='1' "+ isSelected2 +"> Yes </option>" +
                                 "</select>";
                     },
-                    width: "5%"
+                    width: "5%", className: "dt-center"
                 },
                 { 
                     title: 'InterviewDate', 
                     render: function(data, row, meta){
-                        return "<input class='form-control inputs_"+ meta.IDrow +"' style='width:50%; height:12px; font-size: 11px;' type='text' value='"+ meta.InterviewDate +"'>"
-                    }, width:"5%"
+                        return "<input class='form-control inputs_"+ meta.IDrow +"' style='width:60%; height:12px; font-size: 11px;' type='date' value='"+ meta.InterviewDate +"'>"
+                    }, width:"5%", className: "dt-center"
                 },
                 { 
                     title: 'Company', 
                     render: function(data, row, meta){
-                        return "<input class='form-control inputs_"+ meta.IDrow +"' style='width:83%; height:12px; font-size: 11px;' type='text' value='"+ meta.Company +"'>"
+                        return "<input class='form-control inputs_"+ meta.IDrow +"' style='width:94%; height:12px; font-size: 11px;' type='text' value='"+ meta.Company +"'>"
                     }, width:"25%"
                 },
                 { title: 'Age', data: "Age", width:"4%", className: "dt-center"},
@@ -252,16 +255,22 @@
                     render: function (data, row, meta, ){
                         var isSelected = meta.ToAbroad == 0 ? 'selected' : '';
                         var isSelected2 = meta.ToAbroad == 1 ? 'selected' : '';
-                        return "<select class='form-control' style='width:50%; height:12px; font-size: 11px;'>" +
+                        return "<select class='form-control' style='width:30%; height:12px; font-size: 11px;'>" +
                                 "<option value='0' "+ isSelected +"> No </option>" +
                                 "<option value='1' "+ isSelected2 +"> Yes </option>" +
                                 "</select>";
                     },
-                    width: "1%"
+                    width: "1%", className: "dt-center"
                 },
             ],
 
             order: [[1, "asc"]],
+            "columnDefs": [
+                {
+                    "targets": 5,
+                    "orderDataType": "dom-input"
+                 }
+            ],
             "initComplete": function () {
                 $("#tblManagementRegistration thead #trSearch").remove();
                 var thead1 = "<tr id='trSearch'>";

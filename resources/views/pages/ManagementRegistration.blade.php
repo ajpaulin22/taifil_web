@@ -14,6 +14,13 @@
         text-align:center;
         padding-bottom:25px !important;
     }
+    .dataTables_length > label{
+        width:200px;
+    }
+    .dataTables_length > label > select{
+        width:25%;
+        margin-bottom:5px;
+    }
 
 </style>
 <div class="panel panel-inverse" id="main-panel" style="margin: auto; margin-top: 10px; margin-bottom:250px; width: 95%; font-size: 14px;" >
@@ -32,7 +39,7 @@
                     </select>
                 </div>
             </div>
-            <div class="col-sm-3 mb-2">
+            <div class="col-sm-2 mb-2" style='margin-left:45px;'>
                 <div class="form-group">
                     <label>Code:</label>
                     <select class="form-control" id="Code" style="width: 70%;">
@@ -63,19 +70,17 @@
                     </select>
                 </div>
             </div>
-            <div class="col-sm-2 mb-2">
-                <div class="form-group">
+            <div class="col-sm-2 mb-2" style='width: 14.1%'>
+                <div class="form-group" style='width: 200px;'>
                     <label>Age:</label>
-                    <input type="text" class="form-control" style="width: 15%; text-align: center;"> - <input type="text" class="form-control" style="width: 15%; text-align: center;">
+                    <input type="text" class="form-control" style="width: 30%; text-align: center;"> - <input type="text" class="form-control" style="width: 30%; text-align: center;">
                 </div>
             </div>
-        </div>
-        <div>
-        <div class="row">
-            <div class="col-sm-1 mb-2">
-                <button type="button" id="btnFilter" class="btn btn-sm btn-info btn-block" style="width: 100px;"><span class="fa fa-filter"></span><span class="btnLabel">Filter</span></button>
+            <div class="col-sm-1 mb-2"> 
+                <button type="button" id="btnFilter" class="btn btn-sm btn-info btn-block" style="width: 100px; margin-top:4px;"><span class="fa fa-filter"></span><span class="btnLabel">Filter</span></button>
             </div>
         </div>
+        <br>
         <div class="row">
             <div class="col-sm-1 mb-2" style='padding-right:0px; margin-right: 5px; width:8%'>
                 <button type="button" id="btnAdd" class="btn btn-sm btn-primary btn-block" style="width: 150px;"><span class="fa fa-plus"></span><span class="btnLabel">Add Applicant</span></button>
@@ -97,19 +102,19 @@
             <table class="table table-striped table-bordered tbl-100p display" style='width: 100%;' data-adjust="-30" id="tblManagementRegistration">
                 <thead style='border: 1px solid black;'>
                     <tr>
-                        <th rowspan="2" class='HeaderTable' style='padding-bottom:25px; border: 1px solid gray !important;'></th>
-                        <th rowspan="2" class='HeaderTable' style='margin:auto;text-align:center; border: 1px solid gray !important;'>ID</th>
-                        <th rowspan="2" class='HeaderTable' style='border: 1px solid gray !important'>Name</th>
-                        <th rowspan="2" class='HeaderTable' style='border: 1px solid gray !important'>Job Categories</th>
-                        <th rowspan="2" class='HeaderTable' style='border: 1px solid gray !important'>Program</th>
-                        <th colspan="3" style='text-align: center; border: 1px solid gray !important'>Interview History</th>
-                        <th rowspan="2" class='HeaderTable' style='border: 1px solid gray !important'>Age</th>
-                        <th rowspan="2" class='HeaderTable' style='border: 1px solid gray !important'>Sent To Abroad</th>
+                        <th rowspan="2" class='HeaderTable' style='padding-bottom:25px; '></th>
+                        <th rowspan="2" class='HeaderTable' style='margin:auto;text-align:center; '>ID</th>
+                        <th rowspan="2" class='HeaderTable'>Name</th>
+                        <th rowspan="2" class='HeaderTable'>Job Categories</th>
+                        <th rowspan="2" class='HeaderTable'>Program</th>
+                        <th colspan="3" style='text-align: center; border-bottom: 1px solid white !important;'>Interview History</th>
+                        <th rowspan="2" class='HeaderTable'>Age</th>
+                        <th rowspan="2" class='HeaderTable'>Sent To Abroad</th>
                     </tr>
                     <tr>
-                        <th style='text-align:center; border: 1px solid gray !important;'>Show/No Show</th>
-                        <th style='text-align:center; border: 1px solid gray !important;'>InterviewDate</th>
-                        <th style='text-align:center; border: 1px solid gray !important;'>Company</th>
+                        <th style='text-align:center;'>Show/No Show</th>
+                        <th style='text-align:center;'>InterviewDate</th>
+                        <th style='text-align:center;'>Company</th>
                     </tr>
                 </thead>
                 <tbody>
