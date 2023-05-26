@@ -17,13 +17,13 @@
                 business of career placement of Filipino professionals, skilled and unskilled workers for overseas 
                 employment and to act as agents of individuals or firms in the supply of manpower.</h5>
 
-            <div class="row">
-                <div class="col-auto g-3 text-center text-green">
+            <div class="row g-3">
+                <div class="col-xl-6 text-center text-green">
                     <h5 class="">VISION</h5>
                     <p>TAI-FIL MANPOWER SERVICES CORPORATION is one of the Philippines’ trusted 
                         providers of quality Filipino worker for overseas employment.</p>
                 </div>
-                <div class="col-auto g-3 text-green">
+                <div class="col-xl-6  text-green">
                     <h5 class="text-center">MISSION</h6>
                     <p class="text-start">We continually strive for excellence customer service and the promotion of Filipino 
                         worker’s image in the global market by:

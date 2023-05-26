@@ -25,7 +25,7 @@
 <header class="header" id="navbar" >
     <div class="header__bottom" style="background-color:white;">
         <div class="container" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-xl">
                 <div class="row">
                     <div class="col-auto" style="padding-right: 0;">
                         <a class="navbar-brand" href="/home#"><img src="/images/logo/logo.jpg" alt="logo"></a>
@@ -41,7 +41,7 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav mainmenu">
-                        <ul class="navbar-nav mb-2 mb-lg-0">
+                        <ul class="navbar-nav mb-2 mb-xl-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="/home#">Home</a>
                             </li>
@@ -100,7 +100,7 @@
                         </ul>
                     </div>
                     <div class="header__more">
-                        <button class="btn" type="button" id="moreoption" data-bs-toggle="dropdown" aria-expanded="false" id="google_translate_element"><i class="fa-solid fa-globe text-white"></i></button>
+                        <button class="btn" type="button" id="moreoption" data-bs-toggle="dropdown" aria-expanded="false" id="google_translate_element"><i class="fa-solid fa-globe text-green"></i></button>
                         {{-- <ul class="dropdown-menu" aria-labelledby="moreoption">
                             <li><button class="dropdown-item"><img src="{{url('/images/japan.png')}}" alt="" srcset=""> Japanese</button></li>
                             <li><button class="dropdown-item"><img src="{{url('/images/united-states.png')}}" alt="" srcset=""> English</button></li>

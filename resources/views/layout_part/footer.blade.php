@@ -1,13 +1,13 @@
-<footer class="mainfooter p-5" role="contentinfo" style="background-image: linear-gradient(to right top, #009572, #1d9972, #2d9d72, #3aa171, #45a571, #46a671, #48a770, #49a870, #40a670, #37a470, #2ba270, #1ca070);">  
+<footer class="mainfooter p-5" role="contentinfo" style="background-color:#183444">  
     <div class="footer-middle">  
     <div class="container">  
       <div class="row wow fadeInUp">  
         <div class="col-md-3 col-sm-6">  
           <div class="footer-pad">  
-            <h4> Footer Heading 1</h4>  
+            <h4 class="text-white"> Footer Heading 1</h4>  
             <ul class="list-unstyled">  
               <li> <a href="#"> </a> </li>  
-              <li> <a href="#">Payment Center</a></li>  
+              <li> <a href="#" class="text-white">Payment Center</a></li>  
               <li> <a href="#"> Contact Directory </a></li>  
               <li> <a href="#">Forms</a></li>  
               <li> <a href="#">News and Updates</a></li>  

@@ -2,7 +2,7 @@
   <link rel="stylesheet" href="{{asset("css/Custom/partial/gallery.css")}}">
 @endpush
 
-<div class="about padding-top padding-bottom" id="Gallery_section" >
+<div class="about" id="Gallery_section" >
     <div class="container">
         <div class="section__header style-2 text-center wow fadeInUp" data-wow-duration="1.5s">
             <h2><hr> GALLERY<hr></h2>
@@ -33,9 +33,9 @@
                 </button>
             </div>
 
-            <div class="row mt-5">
+            <div class="row g-3 mt-5">
                 
-                <div class="blog-post-item col-md-3 col-sm-3">
+                <div class="blog-post-item col-md-3 ">
                     <div class="card shadow-sm border partial_imagecard">
                         <img src="{{url('/images/carousel/JAP.jpg')}}" class="img-responsive">
             
@@ -53,7 +53,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="blog-post-item col-md-3 col-sm-3">
+                <div class="blog-post-item col-md-3 ">
                     <div class="card shadow-sm border partial_imagecard">
                         <img src="{{url('/images/carousel/JAP.jpg')}}" class="img-responsive">
                         {{-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="overflow:hidden;">
@@ -96,7 +96,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="blog-post-item col-md-3 col-sm-3">
+                <div class="blog-post-item col-md-3">
                     <div class="card shadow-sm border partial_imagecard">
                         <img src="{{url('/images/carousel/JAP.jpg')}}" class="img-responsive">
             
@@ -114,7 +114,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="blog-post-item col-md-3 col-sm-3">
+                <div class="blog-post-item col-md-3">
                     <div class="card shadow-sm border partial_imagecard">
                         <img src="{{url('/images/carousel/JAP.jpg')}}" class="img-responsive">
             

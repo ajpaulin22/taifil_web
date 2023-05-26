@@ -5,13 +5,13 @@
 @section('content')
     <div class="container">
         <section class="m-5">
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            {{-- <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="/home">Home</a></li>
-                  {{-- <li class="breadcrumb-item"><a href="#">Home</a></li> --}}
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
                   <li class="breadcrumb-item active" aria-current="page">Qualification</li>
                 </ol>
-              </nav>
+              </nav> --}}
            <div class="card mb-2">
             <div class="card-body text-center">
                 <h4>About the agency</h4>

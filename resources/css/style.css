@@ -3704,7 +3704,7 @@ a[class*=lightcase-icon-] {
   font-weight: 600;
 }
 .group__top ul li .nav-link.active, .group__top ul li .nav-link:hover {
-  color: #81e6d9;
+  color: green;
 }
 .group__bottom {
   margin-top: 30px;
