@@ -17,7 +17,7 @@
             <div class="col-md-9 mt-5 blog-posts mb-5">
                 <div class="rounded shadow-lg bg-white h-auto p-4 border border-success row blog-post mb-5">
                     <h3>
-                        <a href="#">Deperture for Month of June </a>
+                        <a href="#">Departure for Month of June </a>
                         <hr>
                     </h3>
                     <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
@@ -54,7 +54,7 @@
                 </div>
                 <div class="rounded shadow-lg bg-white h-auto p-4 border border-success row blog-post mb-5">
                     <h3>
-                        <a href="#">Deperture for Month of June </a>
+                        <a href="#">Departure for Month of June </a>
                         <hr>
                     </h3>
                     <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
