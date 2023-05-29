@@ -19,12 +19,13 @@
         overflow-x: hidden !important;
     }
 </style>
-<ul class="nav nav-tabs">
+<br>
+<ul class="nav nav-tabs" style='background-image:linear-gradient(to right top, #53aa71, #53aa71, #53aa71, #53aa71, #53aa71, #4ea871, #4aa771, #45a571, #3aa171, #2d9d72, #1d9972, #009572);'>
     <li class="nav-item">
       <a class="nav-link active" href="#">Job Information</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="UserInformation.html">User Information</a>
+      <a class="nav-link" href="UserInformation.html" style='color: white'>User Information</a>
     </li>
   </ul>
   <h4 style="margin-left:50px; margin-top: 5px;"><span class="fa fa-briefcase" style="margin-right: 5px; margin-top: 5px;"></span>Job Information</h4>
@@ -37,7 +38,7 @@
                         <button type="button" id="btnAddCodes" class="btn btn-sm btn-info btn-block" style="width: 90%; margin: auto;"><span class="fa fa-plus"></span><span class="btnLabel">Add</span></button>
                     </div>
                     <div class="col-sm-4">
-                        <button type="button" id="btnEditCodes" class="btn btn-sm btn-green btn-block" style="width: 90%; margin: auto;"><span class="fa fa-edit"></span><span class="btnLabel">Edit</span></button>
+                        <button type="button" id="btnEditCodes" class="btn btn-sm btn-success btn-block" style="width: 90%; margin: auto;"><span class="fa fa-edit"></span><span class="btnLabel">Edit</span></button>
                     </div>
                     <div class="col-sm-4">
                         <button type="button" id="btnDeleteCodes" class="btn btn-sm btn-danger btn-block" style="width: 90%; margin: auto;"><span class="fa fa-trash"></span><span class="btnLabel">Delete</span></button>
@@ -57,7 +58,7 @@
                         <button type="button" id="btnAddJobCategories" class="btn btn-sm btn-info btn-block" style="width: 90%; margin: auto;"><span class="fa fa-plus"></span><span class="btnLabel">Add</span></button>
                     </div>
                     <div class="col-sm-4">
-                        <button type="button" id="btnEditJobCategories" class="btn btn-sm btn-green btn-block" style="width: 90%; margin: auto;"><span class="fa fa-edit"></span><span class="btnLabel">Edit</span></button>
+                        <button type="button" id="btnEditJobCategories" class="btn btn-sm btn-success btn-block" style="width: 90%; margin: auto;"><span class="fa fa-edit"></span><span class="btnLabel">Edit</span></button>
                     </div>
                     <div class="col-sm-4">
                         <button type="button" id="btnDeleteJobCategories" class="btn btn-sm btn-danger btn-block" style="width: 90%; margin: auto;"><span class="fa fa-trash"></span><span class="btnLabel">Delete</span></button>
@@ -77,7 +78,7 @@
                         <button type="button" id="btnAddOperations" class="btn btn-sm btn-info btn-block" style="width: 90%; margin: auto;"><span class="fa fa-plus"></span><span class="btnLabel">Add</span></button>
                     </div>
                     <div class="col-sm-4">
-                        <button type="button" id="btnEditOperations" class="btn btn-sm btn-green btn-block" style="width: 90%; margin: auto;"><span class="fa fa-edit"></span><span class="btnLabel">Edit</span></button>
+                        <button type="button" id="btnEditOperations" class="btn btn-sm btn-success btn-block" style="width: 90%; margin: auto;"><span class="fa fa-edit"></span><span class="btnLabel">Edit</span></button>
                     </div>
                     <div class="col-sm-4">
                         <button type="button" id="btnDeleteOperations" class="btn btn-sm btn-danger btn-block" style="width: 90%; margin: auto;"><span class="fa fa-trash"></span><span class="btnLabel">Delete</span></button>

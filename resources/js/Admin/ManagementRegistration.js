@@ -47,7 +47,7 @@
             shtml = "<option value=''></option>" +
             '<option value="WellDrilling">Well Drilling</option> ' +
             '<option value="BuildingSheetMetalWork">Building Sheet Metal Work</option> ' +
-            '<option value="FreezingAndAirConditioning">Freezing And Air Conditioning</option> ' +
+            '<option value="FreezingAndAirConditioningApparatusInstalling">Freezing And Air Conditioning Apparatus Installing</option> ' +
             '<option value="FixtureMaking">Fixture Making</option> ' +
             '<option value="Carpentry">Carpentry</option> ' +
             '<option value="FrameWorking">Frame Working</option> ' +
@@ -111,7 +111,7 @@
             '<option value="1">Duct Sheet Metal Operation</option>' +
             '<option value="2">Interior And Exterior Sheet Metal Operation</option>' ;
         }
-        else if ($("#JobCategories").val() == "FreezingAndAirConditioning"){
+        else if ($("#JobCategories").val() == "FreezingAndAirConditioningApparatusInstalling"){
             shtml = "<option value='0'></option>" +
             '<option value="1">Freezing And Air Harmonizing Equipment Installation Work</option>' ;
         }
