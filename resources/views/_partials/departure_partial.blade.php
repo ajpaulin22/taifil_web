@@ -1,3 +1,8 @@
+<style>
+    .input-group{
+        width: 70%;
+    }
+</style>
 <div class="" >
     <div class="container p-4">
         <div class="section__wrapper wow fadeInUp" data-wow-duration="1.5s">
@@ -14,7 +19,7 @@
                                       <div class="col-xl-3 col-lg-6 col-md-6">
                                         <div class="input-group mb-3">
                                             <span class="input-group-text">JAN</span>
-                                            <input type="text" class="form-control text-end" name="dep_feb" id="dep_feb" value="11" readonly/>
+                                            <input type="text" class="form-control text-end" name="dep_jan" id="dep_jan" value="11" readonly/>
                                           </div>
                                       </div>
                                       <div class="col-xl-3 col-lg-6 col-md-6">
