@@ -8,10 +8,10 @@
             <div class="col-md-3 mt-5">
                 <h6>Categories</h6>
                 <ul>
-                    <li><a href="">Event Event</a> <hr></li>
-                    <li><a href="">Departure</a> <hr></li>
-                    <li><a href="">News and Updates</a> <hr></li>
-                    <li><a href="">Activities</a> <hr></li>
+                    <li><a href="#">Event</a> <hr></li>
+                    <li><a href="#">Departure</a> <hr></li>
+                    <li><a href="#">News and Updates</a> <hr></li>
+                    <li><a href="#">Activities</a> <hr></li>
                 </ul>
             </div>
             <div class="col-md-9 mt-5 blog-posts mb-5">

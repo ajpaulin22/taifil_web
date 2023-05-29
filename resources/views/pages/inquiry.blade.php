@@ -8,13 +8,13 @@
          <!-- ================> Page Header section start here <================== -->
 	{{-- </div> --}}
 
-    <div class="about padding-top padding-bottom " id="inquiry_section" style="background-color:white">
+    <div class="about " id="inquiry_section" style="background-color:white">
         <div class="container">
             <div class="section__header style-2 text-center wow fadeInUp " data-wow-duration="1.5s" >
                 <h2><hr>INQUIRY<hr></h2>
                 <div class="bg-white rounded text-start p-4 mt-4 shadow-lg animate__animated animate__bounce border border-success" style="background-color: white; ">
                     <div class="row">
-                        <div class="col-8">
+                        <div class="col-lg-8">
                             <p>Drop us a line or just say Hello!</p>
                     <div class="row">
                         <div class="col-md-6">
@@ -46,11 +46,11 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#sss" target="_blank" class="btn btn-success btn-reveal btn-default mt-4 ">
-                    <span>Send Message</span>
-                    </a>
-                        </div>
-                        <div class="col-4">
+                        <a href="#sss" target="_blank" class="btn btn-success btn-reveal btn-default mt-4 ">
+                            <span>Send Message</span>
+                        </a>
+                </div>
+                        <div class="col-lg-4">
                             <div class="location-map">
                                 <div id="map">
                                     <iframe src="https://maps.google.com/maps?q=Alabang-Zapote, Tierra Nueva Village, Cupang, Muntinlupa City, Philippines&t=&z=10&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
@@ -64,7 +64,7 @@
     </div>
 
 <!-- ===========Info Section Ends Here========== -->
-<div class="info-section padding-top padding-bottom">
+<div class="info-section padding-bottom">
     <div class="container">
         <div class="section__header style-2 text-center">
             <h2>Contact Info</h2>

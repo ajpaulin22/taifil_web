@@ -1,52 +1,58 @@
-<footer class="mainfooter p-5" role="contentinfo" style="background-image: linear-gradient(to right top, #009572, #1d9972, #2d9d72, #3aa171, #45a571, #46a671, #48a770, #49a870, #40a670, #37a470, #2ba270, #1ca070);">  
+<footer class="mainfooter p-5" role="contentinfo" style="background-color:#183444">  
     <div class="footer-middle">  
     <div class="container">  
       <div class="row wow fadeInUp">  
         <div class="col-md-3 col-sm-6">  
-          <div class="footer-pad">  
-            <h4> Footer Heading 1</h4>  
+          <div class="footer-pad text-white">  
+            <h4 class="text-white">Address</h4>  
+            <address><i class="fa fa-map-marker"></i> 4C,D&E,N.T. Ctr, Alabang-Zapote, Tierra Nueva Village, Cupang, Muntinlupa City</address> 
+          </div>  
+        </div>  
+        <div class="col-md-3 col-sm-6">  
+          <div class="footer-pad text-white">  
+            <h4 class="text-white">Contacts</h4>  
             <ul class="list-unstyled">  
-              <li> <a href="#"> </a> </li>  
-              <li> <a href="#">Payment Center</a></li>  
-              <li> <a href="#"> Contact Directory </a></li>  
-              <li> <a href="#">Forms</a></li>  
-              <li> <a href="#">News and Updates</a></li>  
-              <li> <a href="#">FAQs</a></li>  
+              <li><i class="fa fa-phone"></i> Phone:<a href="Tel:+" class="text-white">5117381</a> </li> 
+              <hr>
+              <li><i class="fa fa-envelope"></i> Email:<a href="mailto:" class="text-white">taifilmanpower.application.sc@gmail.com</a> </li>  
             </ul>  
           </div>  
         </div>  
         <div class="col-md-3 col-sm-6">  
-          <div class="footer-pad">  
-            <h4> Footer Heading 2</h4>  
+          <div class="footer-pad text-white">  
+            <h4 class="text-white"> Partners</h4>  
             <ul class="list-unstyled">  
-              <li><a href="#"> Blog </a> </li>  
-              <li><a href="#">Accessibility</a> </li>  
-              <li><a href="#">Disclaimer</a></li>  
-              <li><a href="#">Privacy Policy</a></li>  
-              <li><a href="#">FAQs</a></li>  
-              <li><a href="#">Webmaster</a></li>  
-            </ul>  
-          </div>  
-        </div>  
-        <div class="col-md-3 col-sm-6">  
-          <div class="footer-pad">  
-            <h4> Footer Heading 3 </h4>  
-            <ul class="list-unstyled">  
-              <li> <a href="#"> Parks and Recreation </a> </li>  
-              <li> <a href="#"> Public Works </a> </li>  
-              <li> <a href="#">Police Department</a> </li>  
-              <li> <a href="#"> Fire </a> </li>  
-              <li> <a href="#"> Mayor and City Council </a> </li>  
+              <li> <a href="#" class="text-white"> Parks and Recreation </a> </li> 
+              <hr> 
+              <li> <a href="#" class="text-white"> Public Works </a> </li>
+              <hr> 
+              <li> <a href="#" class="text-white">Police Department</a> </li> 
+              <hr>  
+              <li> <a href="#" class="text-white"> Fire </a> </li>  
+              <hr> 
+              <li> <a href="#" class="text-white"> Mayor and City Council </a> </li>  
             </ul>  
           </div>  
         </div>  
           <div class="col-md-3">  
-              <h4> Follow Us </h4>  
-              <ul class="social-network social-circle">  
-               <li> <a href="https://www.facebook.com/profile.php?id=100072207240998" target='_blank' title="Facebook"><i class="fab fa-facebook-f fa-lg"></i></a> </li>  
-               <li> <a href="#"  title="Linkedin"> <i class="fab fa-linkedin"> </i> </a> </li>  
-               <li> <a href="#"> <i class="fab fa-twitter" aria-hidden="true"> </i> </a> </li>  
-              </ul>               
+              <h4 class="text-white"> Follow Us </h4>  
+              <ul class="list-group list-group-horizontal">
+                <li class="list-group-item">
+                  <a href="https://www.facebook.com/profile.php?id=100072207240998">
+                    <i class="fab fa-facebook-f fa-lg"></i>
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin"> </i>
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="">
+                    <i class="fab fa-twitter" aria-hidden="true"> </i>
+                  </a>
+                </li>
+              </ul>                 
       </div>  
       </div>  
     </div>  
