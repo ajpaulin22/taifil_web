@@ -74,7 +74,7 @@ function readURL(input,id) {
         reader.readAsDataURL(input.files[0]);
     }
 }
-
+// Employment Local Functions Start
 function disableDeleteLocalEmployment(){
     var deleteCount = 0;
     $('.btnDeleteLocalCompany').each(function(){
@@ -109,13 +109,55 @@ function addLocalEmployment(){
         '</div>' ;
         $("#EmploymentRecord_Local_form").append(employmentDiv);
 }
+// Employment Local Functions End
+
+// Employment Abroad Functions Start
+function disableDeleteAbroadEmployment(){
+    var deleteCount = 0;
+    $('.btnDeleteAbroadCompany').each(function(){
+        deleteCount++;
+    })
+    if (deleteCount <= 1)
+        $('.btnDeleteAbroadCompany').attr('disabled', true);
+    else
+        $('.btnDeleteAbroadCompany').removeAttr('disabled');
+}
+
+function addAbroadEmployment(){
+    var employmentDiv = '<div class="row g-3 divAbroadEmployment">' +
+        '<div class="col-md-2 text-center">' +
+        '<input type="text" class="form-control emplocalcompany inputDisableAbroad" name="emplocalcompany0" id="emplocalcompany_0" placeholder="Name of School" required>' +
+        '</div>' +
+        '<div class="col-md-2 text-center">' +
+        '<input type="text" class="form-control emplocalposition inputDisableAbroad" name="emplocalposition0" id="emplocalposition_0" placeholder="School Address" required>' +
+        '</div>' +
+        '<div class="col-md-2 text-center">' +
+        '<input type="date" class="form-control emplocaladdress inputDisableAbroad" name="emplocaladdress0" id="emplocaladdress_0" required>' +
+        '</div>' +
+        '<div class="col-md-2 text-center">' +
+        '<input type="date" class="form-control emplocalfrom inputDisableAbroad" name="emplocalfrom0" id="emplocalfrom_0" required>' +
+        '</div>' +
+        '<div class="col-md-2 text-center">' +
+        '<input type="date" class="form-control emplocalto inputDisableAbroad" name="emplocalto0" id="emplocalto_0" required>' +
+        '</div>' +
+        '<div class="col-md-2">' +
+        '<button type="button" id="btnDeleteAbroadCompany_0" class="btn btn-sm btn-danger btn-block btnDeleteAbroadCompany" style="margin-top:4px;"><span class="fa fa-trash"></span><span class="btnLabel">Remove</span></button>' +
+        '</div>' +
+        '</div>' ;
+        $("#EmploymentRecord_Abroad_form").append(employmentDiv);
+}
+// Employment Abroad Functions End
 
 $(document).ready(function () {
     'use strict'
-  
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     var personaldata_form = document.querySelectorAll('#personaldata_form')
 
+    $('#upload').on('change', function () {
+        readURL(input);
+    });
+
+    // Employment Local Start
     $("#Addbtn_Employment_Local").click(function(){
         var i = 0;
         addLocalEmployment();
@@ -132,10 +174,6 @@ $(document).ready(function () {
         });
     });
 
-    $('#upload').on('change', function () {
-        readURL(input);
-    });
-
     $('#chkboxLocalEmployment').change(function(){
         if ($(this).is(':checked')){
             $('.divLocalEmployment').remove();
@@ -143,12 +181,50 @@ $(document).ready(function () {
             $('.inputDisable').attr('disabled', true);
             $('.inputDisable').val("");
             $('#Addbtn_Employment_Local').attr('disabled', true);
+            $('.btnDeleteLocalCompany').attr('disabled', true);
+            
         }
         else{
             $('.inputDisable').removeAttr('disabled');
             $('#Addbtn_Employment_Local').removeAttr('disabled');
         }
     });
+    // Employment Local End
+
+    // Employment Abroad Start
+    $("#Addbtn_Employment_Abroad").click(function(){
+        var i = 0;
+        addAbroadEmployment();
+        $('.empabroadcompany').each(function(){
+            $(this).removeAttr('id');
+            $(this).attr('id', 'empabroadcompany_' + i);
+            i++;
+        });
+        disableDeleteAbroadEmployment();
+
+        $('.btnDeleteAbroadCompany').click(function(){
+            $(this).closest('.divAbroadEmployment').remove();
+            disableDeleteAbroadEmployment();
+        });
+    });
+
+    $('#chkboxAbroadEmployment').change(function(){
+        if ($(this).is(':checked')){
+            $('.divAbroadEmployment').remove();
+            addAbroadEmployment();
+            $('.inputDisableAbroad').attr('disabled', true);
+            $('.inputDisableAbroad').val("");
+            $('#Addbtn_Employment_Abroad').attr('disabled', true);
+            $('.btnDeleteAbroadCompany').attr('disabled', true);
+        }
+        else{
+            $('.inputDisableAbroad').removeAttr('disabled');
+            $('#Addbtn_Employment_Abroad').removeAttr('disabled');
+        }
+    });
+    // Employment Abroad End
+
+
 
     // Loop over them and prevent submission
     Array.prototype.slice.call(personaldata_form)
