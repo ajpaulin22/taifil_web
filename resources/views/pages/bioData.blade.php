@@ -524,13 +524,13 @@
 					<div class="tab-pane fade" id="EmploymentRecord_Local">
 						<div class="m-4">
 							<div class="row mt-2">
-								<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 align text-center">
+								<div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 align text-center">
 									<h6>Name of Company<span style="color:red">*</span></h6>
 								</div>
 								<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 text-center">
 									<h6>Position<span style="color:red">*</span></h6>
 								</div>
-								<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 text-center">
+								<div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 text-center">
 									<h6>Company Address<span style="color:red">*</span></h6>
 								</div>
 								<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 text-center">
@@ -539,27 +539,32 @@
 								<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 text-center">
 									<h6>Date Until<span style="color:red">*</span></h6>
 								</div>
-
 							</div>
 							<form class="row g-3" novalidate id="EmploymentRecord_Local_form">
-								<div class="col-md-3 text-center">
-									<input type="text" class="form-control" name="emp_local_company1" id="emp_local_company1" placeholder="Name of School" required>
-								</div>
-								<div class="col-md-2 text-center">
-									<input type="text" class="form-control" name="emp_local_position1" id="emp_local_position1" placeholder="School Address" required>
-								</div>
-								<div class="col-md-3 text-center">
-									<input type="date" class="form-control" name="emp_local_address1" id="emp_local_address1" required>
-								</div>
-								<div class="col-md-2 text-center">
-									<input type="date" class="form-control" name="emp_local_from1" id="emp_local_from1" required>
-								</div><div class="col-md-2 text-center">
-									<input type="date" class="form-control" name="emp_local_to1" id="emp_local_to1" required>
+								<div class='row g-3 divLocalEmployment'>
+									<div class="col-md-2 text-center">
+										<input type="text" class="form-control emp_local_company inputDisable" name="emplocalcompany_0" id="emplocalcompany_0" placeholder="Name of School" required>
+									</div>
+									<div class="col-md-2 text-center">
+										<input type="text" class="form-control emp_local_position inputDisable" name="emplocalposition_0" id="emplocalposition_0" placeholder="School Address" required>
+									</div>
+									<div class="col-md-2 text-center">
+										<input type="date" class="form-control emp_local_address inputDisable" name="emplocaladdress_0" id="emplocaladdress_0" required>
+									</div>
+									<div class="col-md-2 text-center">
+										<input type="date" class="form-control emp_local_from inputDisable" name="emplocalfrom_0" id="emplocalfrom_0" required>
+									</div>
+									<div class="col-md-2 text-center">
+										<input type="date" class="form-control emp_local_to inputDisable" name="emplocalto_0" id="emplocalto_0" required>
+									</div>
+									<div class="col-md-2">
+										<button type="button" id="btnDeleteLocalCompany_0" class="btn btn-sm btn-danger btn-block btnDeleteLocalCompany" style='margin-top:4px;' disabled><span class="fa fa-trash"></span><span class="btnLabel">Remove</span></button>
+									</div>
 								</div>
 							</form>
 							<button class="btn btn-success mt-1" id="Addbtn_Employment_Local">Add Record</button>
 							<div class="form-check form-check-inline mx-5 mt-2">
-								<input class="form-check-input" type="checkbox" id="personal_japlang_writing" value="writing">
+								<input class="form-check-input" type="checkbox" id="chkboxLocalEmployment" value="writing">
 								<label class="form-check-label" for="personal_japlang_writing">Not Applicable</label>
 							</div>
 						</div>

@@ -18299,11 +18299,40 @@ function readURL(input,id) {
     }
 }
 
+function disableDeleteLocalEmployment(){
+    var deleteCount = 0;
+    $('.btnDeleteLocalCompany').each(function(){
+        deleteCount++;
+    })
+    if (deleteCount <= 1)
+        $('.btnDeleteLocalCompany').attr('disabled', true);
+    else
+        $('.btnDeleteLocalCompany').removeAttr('disabled');
+}
 
-
-
-
-
+function addLocalEmployment(){
+    var employmentDiv = '<div class="row g-3 divLocalEmployment">' +
+        '<div class="col-md-2 text-center">' +
+        '<input type="text" class="form-control emp_local_company inputDisable" name="emplocalcompany_0" id="emplocalcompany_0" placeholder="Name of School" required>' +
+        '</div>' +
+        '<div class="col-md-2 text-center">' +
+        '<input type="text" class="form-control emp_local_position inputDisable" name="emplocalposition_0" id="emplocalposition_0" placeholder="School Address" required>' +
+        '</div>' +
+        '<div class="col-md-2 text-center">' +
+        '<input type="date" class="form-control emp_local_address inputDisable" name="emplocaladdress_0" id="emplocaladdress_0" required>' +
+        '</div>' +
+        '<div class="col-md-2 text-center">' +
+        '<input type="date" class="form-control emp_local_from inputDisable" name="emplocalfrom_0" id="emplocalfrom_0" required>' +
+        '</div>' +
+        '<div class="col-md-2 text-center">' +
+        '<input type="date" class="form-control emp_local_to inputDisable" name="emplocalto_0" id="emplocalto_0" required>' +
+        '</div>' +
+        '<div class="col-md-2">' +
+        '<button type="button" id="btnDeleteLocalCompany_0" class="btn btn-sm btn-danger btn-block btnDeleteLocalCompany" style="margin-top:4px;"><span class="fa fa-trash"></span><span class="btnLabel">Remove</span></button>' +
+        '</div>' +
+        '</div>' ;
+        $("#EmploymentRecord_Local_form").append(employmentDiv);
+}
 
 $(document).ready(function () {
     'use strict'
@@ -18311,8 +18340,38 @@ $(document).ready(function () {
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     var personaldata_form = document.querySelectorAll('#personaldata_form')
 
+    $("#Addbtn_Employment_Local").click(function(){
+        var i = 0;
+        addLocalEmployment();
+        $('.emp_local_company').each(function(){
+            $(this).removeAttr('id');
+            $(this).attr('id', 'emplocalcompany_' + i);
+            i++;
+        });
+        disableDeleteLocalEmployment();
+
+        $('.btnDeleteLocalCompany').click(function(){
+            $(this).closest('.divLocalEmployment').remove();
+            disableDeleteLocalEmployment();
+        });
+    });
+
     $('#upload').on('change', function () {
         readURL(input);
+    });
+
+    $('#chkboxLocalEmployment').change(function(){
+        if ($(this).is(':checked')){
+            $('.divLocalEmployment').remove();
+            addLocalEmployment();
+            $('.inputDisable').attr('disabled', true);
+            $('.inputDisable').val("");
+            $('#Addbtn_Employment_Local').attr('disabled', true);
+        }
+        else{
+            $('.inputDisable').removeAttr('disabled');
+            $('#Addbtn_Employment_Local').removeAttr('disabled');
+        }
     });
 
     // Loop over them and prevent submission
@@ -18331,5 +18390,5 @@ $(document).ready(function () {
   
           personaldata_form.classList.add('was-validated')
         }, false)
-      })
+      });
   });

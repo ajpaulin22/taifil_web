@@ -29,7 +29,7 @@
     </li>
   </ul>
   <h4 style="margin-left:50px; margin-top: 5px;"><span class="fa fa-briefcase" style="margin-right: 5px; margin-top: 5px;"></span>Job Information</h4>
-<div class="panel panel-inverse" id="main-panel" style="margin: auto; margin-top: 10px; margin-bottom: 100px; width: 95%; font-size: 14px; box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.1);" >
+<div class="panel panel-inverse" id="main-panel" style="margin: auto; margin-top: 10px; margin-bottom: 100px; width: 98%; font-size: 14px; box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.1);" >
     <div class="panel-body">
         <div class="row">
             <div class="col-sm-4">
