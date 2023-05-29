@@ -1002,7 +1002,7 @@
 								<div class="invalid-feedback">Example invalid form file feedback</div>
 							</div>
 							<div class="col-lg-4">
-								<h5>Valid ID Picture</h5>
+								<h5>Passport ID Picture</h5>
 								<div class="image-area mt-4"><img id="imageResult3" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
 								<input type="file" class="form-control" onchange="readURL(this,3);" aria-label="file example" required>
 								<div class="invalid-feedback">Example invalid form file feedback</div>
@@ -1012,7 +1012,6 @@
 					<a href="#EmploymentRecord_Local" class="btn btn-secondary offset-11 " id="addAcquantances" style="margin-top: 1rem;">SAVE</a>	
 				</div>
 			</div>
-			
         </div>
     </div>
     <!-- ================> Page Header section end here <================== -->
