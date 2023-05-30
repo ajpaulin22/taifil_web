@@ -6,7 +6,7 @@
         {IDcheckbox: 2, IDrow: 2, Name: "Lenard", JobCategories: "Cultivate Agriculture", Program: "TITP", Show: 1, InterviewDate: "2023-01-02", Company: "Umbrella Corporation", Age: 25, ToAbroad: 0},
         {IDcheckbox: 3, IDrow: 3, Name: "Alphy", JobCategories: "Livestock Agriculture", Program: "Direct", Show: 2, InterviewDate: "2023-01-03", Company: "Seiko", Age: 26, ToAbroad: 1},
     ];
-
+    
     $(document).ready(function(){
         drawDataTable();
         $(".carousel").carousel({
@@ -207,23 +207,29 @@
     }
 
     function drawDataTable(){
+        
         $("#tblManagementRegistration").DataTable({
-            data: data,
+            "ajax": {
+                "url" : "../Applicants.json",
+                "type": "GET",
+                "datatype": "json",
+                "dataSrc": "data.Users"
+            },
             searching: false,
             columns: [
                 {
-                    title: "<input type='checkbox' id='CheckAllitem' />",
+                    title: "<input type='checkbox' id='CheckAllitem'/>",
                     render: function (data, row, meta){
-                        return "<input type='checkbox' class='CheckItem text-center' value='" + meta.IDcheckbox + "'>";
+                        return "<input type='checkbox' class='CheckItem text-center' value='" + meta.ID + "'>";
                     },
                     width: "2%", orderable: false
                 },
-                { title: 'ID', data: "IDrow", width: "4%", className: "dt-center"},
+                { title: 'ID', data: "ID", width: "4%", className: "dt-center"},
                 { title: 'Name', data: "Name", width: "18%"},
                 { title: 'JobCategories', data: "JobCategories", width: "17%"},
                 { title: 'Program', data: "Program", width: "6%", className: "dt-center"},
                 { 
-                    title: 'Show', 
+                    title: 'Show',
                     render: function (data, row, meta, ){
                         var isSelected = meta.Show == 0 ? 'selected' : '';
                         var isSelected2 = meta.Show == 1 ? 'selected' : '';
@@ -260,7 +266,6 @@
                     width: "1%", className: "dt-center"
                 },
             ],
-
             order: [[1, "asc"]],
             "columnDefs": [
                 {

@@ -1,0 +1,113 @@
+{
+    "data" :{
+        "Codes":[
+            {
+                "ID": 1,
+                "Code": "Cultivation Agriculture"
+            },
+            {
+                "ID": 2,
+                "Code": "Livestock Agriculture"
+            },
+            {
+                "ID": 3,
+                "Code": "Fishing Boat Fisheries"
+            },
+            {
+                "ID": 4,
+                "Code": "Aquaculture"
+            },
+            {
+                "ID": 5,
+                "Code": "Well Drilling"
+            },
+            {
+                "ID": 6,
+                "Code": "Building Sheet Metal Work"
+            },
+            {
+                "ID": 7,
+                "Code": "Freezing And Air Conditioning Apparatus Installing"
+            },
+            {
+                "ID": 8,
+                "Code": "Fixture Making"
+            },
+            {
+                "ID": 9,
+                "Code": "Carpentry"
+            },
+            {
+                "ID": 10,
+                "Code": "Frame Working"
+            },
+            {
+                "ID": 11,
+                "Code": "Reinforcing Bar Construction"
+            },
+            {
+                "ID": 12,
+                "Code": "Scaffolding"
+            },
+            {
+                "ID": 13,
+                "Code": "Building Stone Construction"
+            },
+            {
+                "ID": 14,
+                "Code": "Tiling"
+            },
+            {
+                "ID": 15,
+                "Code": "Tile Roofing"
+            },
+            {
+                "ID": 16,
+                "Code": "Plastering"
+            },
+            {
+                "ID": 17,
+                "Code": "Plumbing"
+            },
+            {
+                "ID": 18,
+                "Code": "Heat Insulation"
+            },
+            {
+                "ID": 19,
+                "Code": "Interior Finishing"
+            },
+            {
+                "ID": 20,
+                "Code": "Sash Setting"
+            },
+            {
+                "ID": 21,
+                "Code": "Waterproofing"
+            },
+            {
+                "ID": 22,
+                "Code": "Concrete Pressure Feeding"
+            },
+            {
+                "ID": 23,
+                "Code": "Well Point Construction"
+            },
+            {
+                "ID": 24,
+                "Code": "Paper Hanging"
+            },
+            {
+                "ID": 25,
+                "Code": "Application of Construction Equipment"
+            },
+            {
+                "ID": 26,
+                "Code": "Furnace Installation"
+            }
+        ],
+        "Cultivation":[
+            {}
+        ]
+    }
+}

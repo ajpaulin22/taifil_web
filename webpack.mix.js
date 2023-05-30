@@ -51,7 +51,6 @@ mix.js('resources/js/app.js', 'public/js')
     .scripts(['resources/js/onepage.js'],"public/js/onepage.js")
 
     .scripts(['public/js/app.js','resources/js/biodata/biodata.js'],"public/js/biodata/biodata.js")
-
     //managementregistration
     .scripts([
         "public/js/app.js",
