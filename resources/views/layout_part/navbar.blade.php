@@ -28,7 +28,7 @@
             <nav class="navbar navbar-expand-xl">
                 <div class="row">
                     <div class="col-auto" style="padding-right: 0;">
-                        <a class="navbar-brand" href="/home#"><img src="/images/logo/logo.jpg" alt="logo"></a>
+                        <a class="navbar-brand" href="/home#"><img src="{{url("/images/Pictures/tf_logo.png")}}" alt="logo"></a>
                     </div>
                     <div class="col-auto p-0">
                         <p class="mb-0 font-weight-bold" style='font-color:#357960' >Tai-Fil <br> Manpower <br> Services Corp.</p>
